@@ -6,9 +6,13 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logo-image" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="Логотип приложения Пинк">
+      <a class="page-header__link">
+        <img class="page-header__logo-image" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="Логотип приложения Пинк.">
+      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -24,31 +28,35 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-      </div>
+        </div>
       </nav>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Пинк - взгляните на жизнь иначе!</h1>
+      <div class="page-description page-description--index">
+        <p class="page-description__text">Взгляните на жизнь иначе!</p>
+      </div>
       <section class="download-app">
         <h2 class="visually-hidden">Скачайте приложение Пинк</h2>
-        <a class="button download-app__button" href="#">Скачать приложение</a>
+        <a class="button download-app__button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
         <ul class="market-list download-app__market-list">
           <li class="market-list__item">
-            <a href="#">App Store</a>
+            <a href="https://www.apple.com/ru/ios/app-store/">App Store</a>
           </li>
           <li class="market-list__item">
-            <a href="#">Google Play</a>
+            <a href="https://play.google.com/store">Google Play</a>
           </li>
           <li class="market-list__item">
-            <a href="#">Windows Apps</a>
+            <a href="https://www.microsoft.com/ru-ru/store/apps/windows">Windows Apps</a>
           </li>
         </ul>
-        <p class="download-app_description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Характеристики приложения Пинк</h2>
-        <p class="features__slogan page-slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+        <p class="features__slogan page-slogan">Устали от серости мегаполиса?</p>
+        <p class="features__slogan page-slogan">Нам есть, что вам предложить!</p>
         <ul class="features__list">
           <li class="features__item">
             <h3 class="features__title">Поднимает настроение</h3>
@@ -66,7 +74,7 @@
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о приложении Пинк</h2>
-        <div class="reviews-wrapper slider">
+        <div class="reviews__wrapper slider">
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
               <blockquote class="reviews__quote">
@@ -75,11 +83,11 @@
               </blockquote>
             </li>
           </ul>
-        </div>
-        <div class="reviews__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--active" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <div class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--active" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
         </div>
       </section>
       <section class="plans">
@@ -98,35 +106,41 @@
               </ul>
             </li>
           </ul>
-        </div>
-        <div class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--active" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <div class="plans__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--active" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
         </div>
       </section>
-      <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
-        <img class="map__img" src="img/layer-153.png" width="320" height="645" alt="Офис разработчика находится по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <p class="contacts__intro page-slogan">Остались вопросы? Свяжитесь с нами!</p>
+          <h2 class="visually-hidden">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__text">Звоните:</p>
+              <a class="contacts__info" href="tel:+78125556666">
+                <p class="contacts__phone">+7 (812) 555-66-66</p>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__text">Пишите:</p>
+              <a class="contacts__info" href="mailto:mail@htmlacademy.ru">
+                <p>mail@htmlacademy.ru</p>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__text">Приезжайте в гости:</p>
+              <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </div>
+        <div class="map contacts__map">
+          <h2 class="visually-hidden">Карта</h2>
+          <img class="map__img" src="img/layer-153.png" width="320" height="645" alt="Офис разработчика находится по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, 19/8.">
+        </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <p class="page-footer__intro page-slogan">Остались вопросы? Свяжитесь с нами!</p>
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__text">Звоните:</p>
-          <a class="contacts__info" href="tel:+78125556666">
-            <p class="contacts__phone">+7 (812) 555-66-66</p>
-          </a>
-          <p class="contacts__text">Пишите:</p>
-          <a class="contacts__info" href="mailto:mail@htmlacademy.ru">
-            <p>mail@htmlacademy.ru</p>
-          </a>
-          <p class="contacts__text">Приезжайте в гости:</p>
-          <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
-        </section>
-    </div>
-    </footer>
   </body>
 </html>
