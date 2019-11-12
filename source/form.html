@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__link" href="index.html">
+        <img class="page-header__logo-image" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="Логотип приложения Пинк.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Форма для участия в конкурсе</h1>
+      <div class="page-description">
+        <p class="page-description__text">Конкурс на самое безбашенное путешествие с Пинк</p>
+      </div>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form__text page-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <div class="form__fields-block form__fields-block--name">
+          <div class="form__inner-wrapper">
+            <label class="form__label" for="second-name">Фамилия:</label>
+            <input class="form__input" type="text" name="second-name" id="second-name" placeholder="Укажите фамилию *" required>
+          </div>
+          <div class="form__inner-wrapper">
+            <label class="form__label" for="first-name">Имя:</label>
+            <input class="form__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
+          </div>
+          <div class="form__inner-wrapper">
+            <label class="form__label" for="patronymic-name">Отчество:</label>
+            <input class="form__input" type="text" name="patronymic-name" id="patronymic-name" placeholder="Ну и отчество тоже">
+          </div>
+        </div>
+        <div class="form__buttons-block form__buttons-block--achievements">
+          <h2 class="form__header">Ваши безбашенные достижения в путешествии</h2>
+          <ul class="form__list">
+            <li class="form__item">
+              <input class="form__button form__button--checkbox" type="checkbox" name="shark" id="shark" checked>
+              <label class="form__button-label" for="shark">Сделал селфи с акулой</label>
+            </li>
+            <li class="form__item">
+              <input class="form__button form__button--checkbox" type="checkbox" name="beach" id="beach" checked>
+              <label class="form__button-label" for="beach">Обгорел на пляже</label>
+            </li>
+            <li class="form__item">
+              <input class="form__button form__button--checkbox" type="checkbox" name="chuck" id="chuck">
+              <label class="form__button-label" for="chuck">Видел Чака Норриса</label>
+            </li>
+            <li class="form__item">
+              <input class="form__button form__button--checkbox" type="checkbox" name="gifts" id="gifts">
+              <label class="form__button-label" for="gifts">Накупил сувениров</label>
+            </li>
+            <li class="form__item">
+              <input class="form__button form__button--checkbox" type="checkbox" name="tower" id="tower" checked>
+              <label class="form__button-label" for="tower">Удержал башню</label>
+            </li>
+            <li class="form__item">
+              <input class="form__button form__button--checkbox" type="checkbox" name="hotel" id="hotel">
+              <label class="form__button-label" for="hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </div>
+        <div class="form__fields-block form__fields-block--contacts">
+          <label class="form__label" for="phone">Номер телефона</label>
+          <input class="form__input" type="tel" name="phone" id="phone" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="Номер, пожалуйста">
+          <label class="form__label" for="email">Адрес почты</label>
+          <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+        </div>
+        <div class="form__buttons-block form__buttons-block--app">
+          <h2 class="form__header">С каким приложением путешествовали?</h2>
+          <ul class="form__list">
+            <li class="form__item">
+              <input class="form__button form__button--radio" type="radio" name="radio" id="ios" checked>
+              <label class="form__button-label" for="ios">Pink для iOS</label>
+            </li>
+            <li class="form__item">
+              <input class="form__button form__button--radio" type="radio" name="radio" id="android">
+              <label class="form__button-label" for="android">Pink на Android</label>
+            </li>
+            <li class="form__item">
+              <input class="form__button form__button--radio" type="radio" name="radio" id="windows">
+              <label class="form__button-label" for="windows">Windows Phone</label>
+            </li>
+          </ul>
+        </div>
+        <div class="form__inner-wrapper">
+          <label class="form__header" for="comment">Опишите свои эмоции</label>
+          <textarea class="form__textarea" id="comment" name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </div>
+        <button class="form__submit" type="submit">Отправить форму</button>
+        <p class="form__asterisk">* - обязательные поля</p>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__link" href="index.html">
+        <img class="page-footer__logo-image" src="https://via.placeholder.com/280x374" width="147" height="40" alt="Логотип приложения Пинк.">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Пинк в Твиттере</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Пинк в Фейсбуке</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Пинк на Ютьюбе</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
