@@ -50,10 +50,10 @@
                 <time class="user-photos__time" datetime="2019-11-11T22:55">(5 минут назад)</time>
               </div>
               <p class="user-photos__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="user-photos__like">
-                <button class="user-photos__like-button" type="button">Нравится:</button>
+              <button class="user-photos__like" type="button">
+                <span class="user-photos__like-text">Нравится:</span>
                 <span class="user_photos__like-number">215</span>
-              </div>
+              </button>
             </article>
           </li>
           <li class="user-photos__item">
@@ -66,10 +66,10 @@
                 <time class="user-photos__time" datetime="2019-11-11T18:00">(5 часов назад)</time>
               </div>
               <p class="user-photos__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class="user-photos__like">
-                <button class="user-photos__like-button" type="button">Нравится:</button>
+              <button class="user-photos__like" type="button">
+                <span class="user-photos__like-text">Нравится:</span>
                 <span class="user-photos__like-number">356</span>
-              </div>
+              </button>
             </article>
           </li>
           <li class="user-photos__item">
@@ -82,10 +82,10 @@
                 <time class="user-photos__time" datetime="2019-11-11T11:00">(12 часов назад)</time>
               </div>
               <p class="user-photos__description">Соседи будут рады!</p>
-              <div class="user-photos__like">
-                <button class="user-photos__like-button" type="button">Нравится:</button>
+              <button class="user-photos__like" type="button">
+                <span class="user-photos__like-text">Нравится:</span>
                 <span class="user-photos__like-number">666</span>
-              </div>
+              </button>
             </article>
           </li>
           <li class="user-photos__item">
@@ -98,10 +98,10 @@
                 <time class="user-photos__time" datetime="2019-11-11T03:00">(20 часов назад)</time>
               </div>
               <p class="user-photos__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <div class="user-photos__like">
-              <button class="user-photos__like-button" type="button">Нравится:</button>
-              <span class="user-photos__like-number">215</span>
-              </div>
+              <button class="user-photos__like" type="button">
+                <span class="user-photos__like-text">Нравится:</span>
+                <span class="user-photos__like-number">215</span>
+              </button>
             </article>
           </li>
           <li class="user-photos__item">
@@ -114,10 +114,10 @@
                 <time class="user-photos__time" datetime="2019-11-10T22:00">(25 часов назад)</time>
               </div>
               <p class="user-photos__description">Самая кубанская в мире!</p>
-              <div class="user-photos__like">
-                <button class="user-photos__like-button" type="button">Нравится:</button>
+              <button class="user-photos__like" type="button">
+                <span class="user-photos__like-text">Нравится:</span>
                 <span class="user-photos__like-number">4</span>
-              </div>
+              </button>
             </article>
           </li>
           <li class="user-photos__item">
@@ -130,10 +130,10 @@
                 <time class="user-photos__time" datetime="2019-11-10T07:00">(40 часов назад)</time>
               </div>
               <p class="user-photos__description">Где снег-то?</p>
-              <div class="user-photos__like">
-                <button class="user-photos__like-button" type="button">Нравится:</button>
+              <button class="user-photos__like" type="button">
+                <span class="user-photos__like-text">Нравится:</span>
                 <span class="user-photos__like-number">150</span>
-              </div>
+              </button>
             </article>
           </li>
           <li class="user-photos__item">
@@ -146,25 +146,25 @@
                 <time class="user-photos__time" datetime="2019-11-10T02:00">(45 часов назад)</time>
               </div>
               <p class="user-photos__description">Всем GM и взаимные лайки!</p>
-              <div class="user-photos__like">
-                <button class="user-photos__like-button" type="button">Нравится:</button>
+              <button class="user-photos__like" type="button">
+                <span class="user-photos__like-text">Нравится:</span>
                 <span class="user-photos__like-number">2560</span>
-              </div>
+              </button>
             </article>
           </li>
         </ul>
       </section>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="form-upload" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Разместите вашу фотографию</h2>
-        <p class="photo-post__text page-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="photo-post__wrapper">
-          <div class="photo-post__file">
-            <label class="photo-post__label" for="file">Выберите фото для загрузки</label>
-            <input class="photo-post__input" type="file" id="file" name="file">
+        <p class="form-upload__text page-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="form-upload__wrapper">
+          <div class="form-upload__file">
+            <label class="form-upload__label" for="file">Выберите фото для загрузки</label>
+            <input class="form-upload__input" type="file" id="file" name="file">
           </div>
-          <img class="photo-post__image" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Зимний пейзаж.">
-          <div class="photo-post__edit">
-            <ul class="photo-post__tools tools-list">
+          <img class="form-upload__image" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Зимний пейзаж.">
+          <div class="form-upload__edit">
+            <ul class="form-upload__tools tools-list">
               <li class="tools-list__item">
                 <button class="tools-list__button tools-list__button--crop" type="button">Обрезать</button>
               </li>
@@ -175,11 +175,13 @@
                 <button class="tools-list__button tools-list__button--contrast" type="button">Изменить контраст</button>
               </li>
             </ul>
-            <input class="photo-post__range" type="range">
+            <input class="form-upload__range form-upload__range--active" type="range">
+            <input class="form-upload__range visually-hidden" type="range">
+            <input class="form-upload__range visually-hidden" type="range">
           </div>
-          <div class="photo-post__buttons">
-            <button class="photo-post__button-submit button" type="submit">Запостить</button>
-            <button class="photo-post__button-cancel button" type="reset">Отмена</button>
+          <div class="form-upload__buttons">
+            <button class="form-upload__button-submit button" type="submit">Запостить</button>
+            <button class="form-upload__button-cancel button" type="reset">Отмена</button>
           </div>
         </div>
       </form>
