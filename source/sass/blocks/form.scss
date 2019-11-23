@@ -78,3 +78,13 @@
     background-color: $medium-grey;
   }
 }
+
+.form__asterisk {
+  @include page-text;
+  text-transform: uppercase;
+}
+
+.form__asterisk-sign {
+  @include page-text;
+  color: $lipstick;
+}
