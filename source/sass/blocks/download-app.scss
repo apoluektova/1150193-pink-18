@@ -1,0 +1,23 @@
+.download-app {
+  background-color: $download-background;
+}
+
+.download-app__button {
+  color: $white;
+  @include button-border($white);
+  @include oval-button;
+  &:hover {
+    background-color: $white;
+    color: $lipstick;
+  }
+  &:active {
+    background-color: $white;
+    color: rgba($lipstick, 0.3);
+  }
+}
+
+.download-app__description {
+  font-size: 14px;
+  font-weight: 300;
+  color: $white;
+}

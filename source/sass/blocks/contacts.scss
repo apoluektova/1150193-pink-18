@@ -1,0 +1,32 @@
+.contacts__list {
+  @include no-list;
+}
+
+.contacts__intro {
+  @include page-slogan;
+}
+
+.contacts__text {
+  font-size: inherit;
+  font-weight: 700;
+  color: $dark-grey;
+  margin: 0;
+}
+
+.contacts__info {
+  font-size: 24px;
+  font-weight: 300;
+  color: $lipstick;
+  margin: 0;
+}
+
+.contacts__link {
+  color: $lipstick;
+  &--mail:hover {
+    color: $dark-grey;
+    text-decoration: underline;
+  }
+  &--mail:active {
+    color: rgba($dark-grey, 0.3)
+  }
+}

@@ -1,0 +1,16 @@
+.tools-list {
+  @include no-list;
+}
+
+.tools-list__button {
+  @include no-button;
+  &--crop {
+    fill: $lipstick;
+  }
+  &--fill {
+    fill: rgba($dark-grey, 0.3);
+  }
+  &--contrast {
+    fill: rgba($dark-grey, 0.3);
+  }
+}

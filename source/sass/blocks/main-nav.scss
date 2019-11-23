@@ -1,0 +1,8 @@
+.main-nav {
+  color: $white;
+  line-height: 32px;
+}
+
+.main-nav__list {
+  @include no-list;
+}

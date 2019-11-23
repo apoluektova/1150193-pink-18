@@ -1,0 +1,15 @@
+.slider__toggle {
+  padding: 0;
+  border: none;
+  width: 6px;
+  height: 6px;
+  background-color: rgba($dark-grey, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*
+.slider__toggle--active {
+  border: 3px solid $dark-grey;
+  background-color: $white;
+} */
