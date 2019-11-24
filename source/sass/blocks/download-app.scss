@@ -3,13 +3,16 @@
 }
 
 .download-app__button {
-  color: $white;
   @include button-border($white);
   @include oval-button;
+  color: $white;
+
+
   &:hover {
     background-color: $white;
     color: $lipstick;
   }
+
   &:active {
     background-color: $white;
     color: rgba($lipstick, 0.3);
