@@ -1,0 +1,48 @@
+.user-photos__text {
+  margin: 0;
+  @include page-text;
+}
+
+.user-photos__list {
+  @include no-list;
+}
+
+.user-photos__post-wrapper {
+  background-color: $light-grey;
+}
+
+.user-photos__author {
+  line-height: 24px;
+  text-align: left;
+  color: $dark-grey
+}
+
+.user-photos__author-name {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.user-photos__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.user-photos__description {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.user-photos__like {
+  @include no-button;
+}
+
+.user-photos__like-text,
+.user-photos__like-number {
+  font-size: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $lipstick;
+}

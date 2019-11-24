@@ -1,0 +1,90 @@
+.form__label {
+  font-size: 14px;
+  text-align: left;
+  line-height: 30px;
+  color: $lipstick;
+  text-transform: uppercase;
+}
+
+.form__text {
+  @include page-text;
+}
+
+.form__input,
+.form__textarea {
+  border: 2px solid $medium-grey;
+  outline: none;
+  &:hover {
+    border: 2px solid $dark-grey;
+  }
+  &:active {
+    border: 2px solid $lipstick;
+  }
+}
+
+.form__input::-webkit-input-placeholder {
+    font-weight: 18px;
+    text-align: left;
+    color: $dark-grey;
+}
+
+.form__buttons-block {
+  background-color: $light-grey;
+}
+
+.form__header {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;;
+  color: $lipstick;
+  font-weight: 400;
+}
+
+.form__list {
+  @include no-list;
+}
+
+.form__button-label {
+  font-size: inherit;
+  line-height: 30px;
+  color: $dark-grey;
+  text-align: left;
+}
+
+.form__textarea {
+  font-size: inherit;
+  line-height: 30px;
+  text-align: left;
+}
+
+.form__submit {
+  @include no-button;
+  background-color: $green;
+  border: 2px solid $green;
+  font-size: inherit;
+  font-weight: 700;
+  color: $white;
+  line-height: 30px;
+  text-transform: uppercase;
+  outline: none;
+  &:hover {
+    background-color: $dark-green;
+  }
+  &:active {
+    background-color: $dark-green;
+    color: rgba($white, 0.3);
+  }
+  &:disabled {
+    background-color: $medium-grey;
+  }
+}
+
+.form__asterisk {
+  @include page-text;
+  text-transform: uppercase;
+}
+
+.form__asterisk-sign {
+  @include page-text;
+  color: $lipstick;
+}

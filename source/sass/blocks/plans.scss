@@ -1,0 +1,40 @@
+.plans {
+  background-color: $light-grey;
+}
+
+.plans__list {
+  @include no-list;
+}
+
+.plans__header {
+  background-color: $dark-grey;
+}
+
+.plans__title {
+  color: $white;
+  font-size: inherit;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.plans__price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: $white;
+  margin: 0;
+}
+
+.plans__options {
+  @include no-list;
+  background-color: $white;
+}
+
+.plans__option {
+  @include page-text;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 2px solid $medium-grey;
+}

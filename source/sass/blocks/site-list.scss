@@ -1,0 +1,30 @@
+.site-list {
+  @include no-list;
+}
+
+.site-list__item {
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $white;
+  box-shadow: 0px 1px 0 0 $black, inset 0px 1px 0 0 rgba($black, 0.15);
+  &--active {
+    color: $white;
+  }
+}
+
+.site-list__link {
+  color: $white;
+  &:hover {
+    color: $lipstick;
+  }
+  &:active {
+    color: rgba($lipstick, 0.3);
+  }
+  &--active,
+  &--active:hover,
+  &--active:active {
+    color: $white;
+  }
+}

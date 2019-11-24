@@ -1,0 +1,36 @@
+.form-upload__wrapper {
+  background-color: $light-grey;
+}
+
+.form-upload__text {
+  @include page-text;
+}
+
+.form-upload__button-submit {
+  @include button-border($lipstick);
+  color: $lipstick;
+  @include oval-button;
+  &:hover {
+    background-color: $lipstick;
+    color: $white;
+  }
+  &:active {
+    background-color: $lipstick;
+    color: rgba($white, 0.3);
+  }
+}
+
+.form-upload__button-cancel {
+  @include button-border(rgba($dark-grey, 0.1));
+  color: rgba($dark-grey, 0.1);
+  @include oval-button;
+  &:hover {
+    @include button-border(rgba($dark-grey, 0.3));
+    color: rgba($dark-grey, 0.3);
+  }
+  &:active {
+    @include button-border(rgba($dark-grey, 0.3));
+    background-color: rgba($dark-grey, 0.3);
+    color: rgba($white, 0.3);
+  }
+}
