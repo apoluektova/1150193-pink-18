@@ -1,5 +1,5 @@
 .page-header {
-  width: 320px;
+  @include mobile-width;
   background-color: $dark-grey;
   box-shadow: 0px 1px 0 0 $black;
 }

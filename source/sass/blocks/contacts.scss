@@ -22,10 +22,12 @@
 
 .contacts__link {
   color: $lipstick;
+
   &--mail:hover {
     color: $dark-grey;
     text-decoration: underline;
   }
+
   &--mail:active {
     color: rgba($dark-grey, 0.3)
   }

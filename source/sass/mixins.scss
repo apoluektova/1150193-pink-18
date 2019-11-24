@@ -37,3 +37,30 @@
   font-size: 14px;
   line-height: 30px;
 }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    font-weight: 18px;
+    text-align: left;
+    color: $dark-grey;
+  }
+  &::-moz-placeholder {
+    font-weight: 18px;
+    text-align: left;
+    color: $dark-grey;
+  }
+  &:-moz-placeholder  {
+    font-weight: 18px;
+    text-align: left;
+    color: $dark-grey;
+  }
+  &:-ms-input-placeholder {
+    font-weight: 18px;
+    text-align: left;
+    color: $dark-grey;
+  }
+}
+
+@mixin mobile-width {
+  width: 320px;
+}
