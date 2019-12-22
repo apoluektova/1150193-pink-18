@@ -1,5 +1,15 @@
 .tools-list {
   @include no-list;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.tools-list__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .tools-list__button {
@@ -15,5 +25,48 @@
 
   &--contrast {
     fill: rgba($dark-grey, 0.3);
+  }
+}
+
+.tools-list__range {
+  width: 240px;
+  margin-bottom: 34px;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tools-list {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+  }
+  .tools-list__range {
+    display: block;
+    width: 202px;
+  }
+  .tools-list__item {
+    display: flex;
+    width: 275px;
+    border-bottom: 1px solid rgba($black, 0.1);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tools-list {
+    width: 410px;
+  }
+  .tools-list__item {
+    width: 410px;
+  }
+  .tools-list__button {
+    width: 48px;
+  }
+  .tools-list__range {
+    width: 288px;
+    margin: 0;
   }
 }

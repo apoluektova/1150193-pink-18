@@ -1,10 +1,18 @@
 .features__list {
   @include no-list;
   background-color: $light-grey;
+  padding: 76px 31px 322px 30px;
 }
 
 .features__slogan {
   @include page-slogan;
+  width: 202px;
+  margin: 0 auto;
+  margin-bottom: 43px;
+}
+
+.features__item {
+  margin-bottom: 40px;
 }
 
 .features__title {
@@ -12,9 +20,50 @@
   font-weight: 700;
   font-size: inherit;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .features__description {
   font-size: 14px;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features__wrapper {
+    background-color: $white;
+    padding: 59px 38px 22px 37px;
+  }
+  .features__slogan {
+    width: 100%;
+    font-size: 40px;
+    line-height: normal;
+    margin: 0;
+  }
+  .features__list {
+    padding: 104px 38px 45px 20px;
+  }
+  .features__item {
+    width: 306px;
+    margin-left: auto;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 368px 165px 56px 163px;
+  }
+  .features__item {
+    width: 236px;
+    text-align: center;
+    margin: 0;
+  }
+  .features__title {
+    @include desktop-title;
+  }
+  .features__description {
+    @include desktop-desc;
+  }
 }

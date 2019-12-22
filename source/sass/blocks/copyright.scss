@@ -1,11 +1,22 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  width: 128px;
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 18px;
   text-align: left;
   color: $dark-grey;
   margin: 0;
+  margin-right: 15px;
 }
 
 .copyright__logo {
   fill: $lipstick;
+}
+
+.copyright__link {
+  display: block;
 }

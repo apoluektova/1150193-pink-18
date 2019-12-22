@@ -1,3 +1,14 @@
 .market-list {
   @include no-list;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 205px;
+  margin: 0 auto;
+}
+
+@media (min-width: $desktop-width) {
+  .market-list {
+    margin-bottom: 63px;
+  }
 }

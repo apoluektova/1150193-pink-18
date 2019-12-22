@@ -1,5 +1,36 @@
 .page-header {
-  @include mobile-width;
-  background-color: $dark-grey;
+  @include container;
+  width: auto;
   box-shadow: 0px 1px 0 0 $black;
+}
+
+.page-header__wrapper {
+  display: flex;
+  padding: 22px 23px 25px 20px;
+  justify-content: space-between;
+  box-shadow: 0px 1px 0 0 $black;
+  background-color: $dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    padding: 27px 19px 42px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 129px 43px 130px;
+    position: relative;
+    z-index: 1;
+    background-color: $dark-grey;
+  }
+  .page-header__wrapper {
+    /*background-color: rgba($dark-grey, 0.3);*/
+    width: 30%;
+    box-shadow: none;
+    padding: 0;
+  }
 }

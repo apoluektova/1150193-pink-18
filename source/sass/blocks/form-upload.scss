@@ -1,15 +1,36 @@
+.form-upload__text-wrapper {
+  padding: 49px 32px 48px 32px;
+}
+
 .form-upload__wrapper {
   background-color: $light-grey;
+  padding: 20px 22px 0 18px;
+}
+
+.form-upload__edit {
+  border-bottom: 1px solid rgba($black, 0.1);
+  margin-bottom: 34px;
+}
+
+.form-upload__image {
+  margin-bottom: 42px;
 }
 
 .form-upload__text {
   @include page-text;
+  width: 253px;
+  margin: 0 auto;
 }
+
 
 .form-upload__button-submit {
   @include button-border($lipstick);
   @include oval-button;
+  background-color: transparent;
   color: $lipstick;
+  width: 280px;
+  padding: 15px 91px 16px 91px;
+  margin-bottom: 12px;
 
   &:hover {
     background-color: $lipstick;
@@ -25,7 +46,11 @@
 .form-upload__button-cancel {
   @include button-border(rgba($dark-grey, 0.1));
   @include oval-button;
+  background-color: transparent;
   color: rgba($dark-grey, 0.1);
+  width: 280px;
+  padding: 15px 91px 16px 91px;
+  margin-bottom: 41px;
 
   &:hover {
     @include button-border(rgba($dark-grey, 0.3));
@@ -36,5 +61,47 @@
     @include button-border(rgba($dark-grey, 0.3));
     background-color: rgba($dark-grey, 0.3);
     color: rgba($white, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-upload__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 57px 20px 54px 20px;
+  }
+  .form-upload__edit-wrapper {
+    width: 275px;
+  }
+  .form-upload__edit {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-upload__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding: 57px 60px 57px 80px;
+  }
+  .form-upload__edit-wrapper {
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form-upload__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-upload__button-submit {
+    width: 183px;
+    margin-bottom: 0;
+    padding: 20px 15px 21px 15px;
+  }
+  .form-upload__button-cancel {
+    width: 183px;
+    margin: 0;
+    padding: 20px 15px 21px 15px;
   }
 }

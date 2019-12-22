@@ -1,5 +1,11 @@
 .plans {
   background-color: $light-grey;
+  padding: 127px 22px 51px 22px;
+}
+
+.plans__wrapper {
+  margin: 0 -22px;
+  overflow: hidden;
 }
 
 .plans__list {
@@ -37,4 +43,23 @@
   text-align: left;
   text-transform: uppercase;
   border-bottom: 2px solid $medium-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .plans {
+    padding: 114px 22px 70px 22px;
+  }
+  .plans__wrapper {
+    margin: 0;
+    overflow: auto;
+  }
+  .plans__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plans {
+    padding: 159px 132px 98px 130px;
+  }
 }
