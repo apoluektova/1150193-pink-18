@@ -5,12 +5,15 @@
 @media (min-width: $tablet-width) {
   .effect {
     display: block;
-    padding: 102px 36px 83px 21px;
+    padding-top: 102px;
+    padding-bottom: 83px;
+    text-align: left;
   }
   .effect__wrapper {
-    width: 295px;
-    margin-left: auto;
-    text-align: left;
+    @include wrapper;
+  }
+  .effect__text {
+    padding: 0 16px 0 309px;
   }
   .effect__title {
     font-size: 30px;
@@ -30,11 +33,15 @@
 
 @media (min-width: $desktop-width) {
   .effect {
-    padding: 114px 179px 118px 131px;
+    padding-top: 17px;
+    padding-bottom: 67px;
     background-color: $light-grey;
   }
   .effect__wrapper {
-    width: 525px;
+    @include wrapper;
+  }
+  .effect__text {
+    padding: 97px 49px 51px 366px;
   }
   .effect__title {
     @include desktop-title;

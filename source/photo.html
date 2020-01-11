@@ -9,35 +9,37 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__link" href="index.html">
-          <picture>
-            <source media="(min-width:660px)" srcset="img/svg/logo-pink-white-tablet.svg">
-            <source media="(min-width:960px)" srcset="img/svg/logo-pink-white-desktop.svg">
-            <img class="page-header__logo-image" src="img/svg/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип приложения Пинк." >
-          </picture>
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-        </button>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link site-list__link--active">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
+        <div class="page-header__container">
+          <a class="page-header__link" href="index.html">
+            <picture>
+              <source media="(min-width:660px)" srcset="img/svg/logo-pink-white-tablet.svg">
+              <source media="(min-width:960px)" srcset="img/svg/logo-pink-white-desktop.svg">
+              <img class="page-header__logo-image" src="img/svg/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип приложения Пинк." >
+            </picture>
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
         </div>
-      </nav>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link site-list__link--active">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
@@ -47,171 +49,173 @@
       </div>
       <section class="user-photos">
         <div class="user-photos__wrapper">
-          <p class="user-photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <div class="user-photos__slogan">
+            <p class="user-photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          </div>
+          <ul class="user-photos__list">
+            <li class="user-photos__item user-photos__item--panorama">
+              <article class="user-photos__post">
+                <a class="user-photos__link" href="#">
+                  <picture class="user-photos__picture">
+                    <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg">
+                    <source media="(min-width:960px)" srcset="img/panorama-desktop@1x.jpg">
+                    <img class="user-photos__image user-photos__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама вида с высоты.">
+                  </picture>
+                </a>
+                <div class="user-photos__post-wrapper user-photos__post-wrapper--panorama">
+                  <div class="user-photos__author user-photos__author--panorama">
+                    <cite class="user-photos__author-name">Анна</cite>
+                    <time class="user-photos__time" datetime="2019-11-11T22:55">(5 минут назад)</time>
+                  </div>
+                  <p class="user-photos__description user-photos__description--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                  <button class="user-photos__like user-photos__like--panorama" type="button">
+                    <span class="user-photos__like-text">Нравится:</span>
+                    <span class="user-photos__like-number">215</span>
+                  </button>
+              </div>
+              </article>
+            </li>
+            <li class="user-photos__item">
+              <article class="user-photos__post">
+                <a class="user-photos__link" href="#">
+                  <picture>
+                    <source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg">
+                    <source media="(min-width:960px)" srcset="img/photo-car-desktop@1x.jpg">
+                    <img class="user-photos__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Белый автомобиль на сером фоне.">
+                  </picture>
+                </a>
+                <div class="user-photos__post-wrapper">
+                  <div class="user-photos__author">
+                    <cite class="user-photos__author-name">Левон</cite>
+                    <time class="user-photos__time" datetime="2019-11-11T18:00">(5 часов назад)</time>
+                  </div>
+                  <p class="user-photos__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <button class="user-photos__like" type="button">
+                    <span class="user-photos__like-text">Нравится:</span>
+                    <span class="user-photos__like-number">356</span>
+                  </button>
+              </div>
+              </article>
+            </li>
+            <li class="user-photos__item">
+              <article class="user-photos__post">
+                <a class="user-photos__link" href="#">
+                  <picture>
+                    <source media="(min-width:660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+                    <source media="(min-width:960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                    <img class="user-photos__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка.">
+                  </picture>
+                </a>
+                <div class="user-photos__post-wrapper">
+                  <div class="user-photos__author">
+                    <cite class="user-photos__author-name">Антон</cite>
+                    <time class="user-photos__time" datetime="2019-11-11T11:00">(12 часов назад)</time>
+                  </div>
+                  <p class="user-photos__description">Соседи будут рады!</p>
+                  <button class="user-photos__like" type="button">
+                    <span class="user-photos__like-text">Нравится:</span>
+                    <span class="user-photos__like-number">666</span>
+                  </button>
+              </div>
+              </article>
+            </li>
+            <li class="user-photos__item">
+              <article class="user-photos__post">
+                <a class="user-photos__link" href="#">
+                  <picture>
+                    <source media="(min-width:660px)" srcset="img/photo-window-tablet@1x.jpg">
+                    <source media="(min-width:960px)" srcset="img/photo-window-desktop@1x.jpg">
+                    <img class="user-photos__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Стеклянная крыша.">
+                  </picture>
+                </a>
+                <div class="user-photos__post-wrapper">
+                  <div class="user-photos__author">
+                    <cite class="user-photos__author-name">Борис</cite>
+                    <time class="user-photos__time" datetime="2019-11-11T03:00">(20 часов назад)</time>
+                  </div>
+                  <p class="user-photos__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <button class="user-photos__like" type="button">
+                    <span class="user-photos__like-text">Нравится:</span>
+                    <span class="user-photos__like-number">215</span>
+                  </button>
+              </div>
+              </article>
+            </li>
+            <li class="user-photos__item">
+              <article class="user-photos__post">
+                <a class="user-photos__link" href="#">
+                  <picture>
+                    <source media="(min-width:660px)" srcset="img/photo-fair-tablet@1x.jpg">
+                    <source media="(min-width:960px)" srcset="img/photo-fair-desktop@1x.jpg">
+                    <img class="user-photos__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Шатер, в котором продаются арбузы и дыни.">
+                  </picture>
+                </a>
+                <div class="user-photos__post-wrapper">
+                  <div class="user-photos__author">
+                    <cite class="user-photos__author-name">Сергей</cite>
+                    <time class="user-photos__time" datetime="2019-11-10T22:00">(25 часов назад)</time>
+                  </div>
+                  <p class="user-photos__description">Самая кубанская в мире!</p>
+                  <button class="user-photos__like" type="button">
+                    <span class="user-photos__like-text">Нравится:</span>
+                    <span class="user-photos__like-number">4</span>
+                  </button>
+              </div>
+              </article>
+            </li>
+            <li class="user-photos__item">
+              <article class="user-photos__post">
+                <a class="user-photos__link" href="#">
+                  <picture>
+                    <source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg">
+                    <source media="(min-width:960px)" srcset="img/photo-pov-desktop@1x.jpg">
+                    <img class="user-photos__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото ног на фоне горного склона.">
+                  </picture>
+                </a>
+                <div class="user-photos__post-wrapper">
+                  <div class="user-photos__author">
+                    <cite class="user-photos__author-name">Максим</cite>
+                    <time class="user-photos__time" datetime="2019-11-10T07:00">(40 часов назад)</time>
+                  </div>
+                  <p class="user-photos__description">Где снег-то?</p>
+                  <button class="user-photos__like" type="button">
+                    <span class="user-photos__like-text">Нравится:</span>
+                    <span class="user-photos__like-number">150</span>
+                  </button>
+              </div>
+              </article>
+            </li>
+            <li class="user-photos__item">
+              <article class="user-photos__post">
+                <a class="user-photos__link" href="#">
+                  <picture>
+                    <source media="(min-width:660px)" srcset="img/photo-wing-tablet@1x.jpg">
+                    <source media="(min-width:960px)" srcset="img/photo-wing-desktop@1x.jpg">
+                    <img class="user-photos__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета на фоне закатного неба.">
+                  </picture>
+                </a>
+                <div class="user-photos__post-wrapper">
+                  <div class="user-photos__author">
+                    <cite class="user-photos__author-name">Надежда</cite>
+                    <time class="user-photos__time" datetime="2019-11-10T02:00">(45 часов назад)</time>
+                  </div>
+                  <p class="user-photos__description">Всем GM и взаимные лайки!</p>
+                  <button class="user-photos__like" type="button">
+                    <span class="user-photos__like-text">Нравится:</span>
+                    <span class="user-photos__like-number">2560</span>
+                  </button>
+              </div>
+              </article>
+            </li>
+          </ul>
         </div>
-        <ul class="user-photos__list">
-          <li class="user-photos__item">
-            <article class="user-photos__post">
-              <a class="user-photos__link" href="#">
-                <picture user-photos__picture>
-                  <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg">
-                  <source media="(min-width:960px)" srcset="img/panorama-desktop@1x.jpg">
-                  <img class="user-photos__image user-photos__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама вида с высоты.">
-                </picture>
-              </a>
-              <div class="user-photos__post-wrapper user-photos__post-wrapper--panorama">
-                <div class="user-photos__author">
-                  <cite class="user-photos__author-name">Анна</cite>
-                  <time class="user-photos__time" datetime="2019-11-11T22:55">(5 минут назад)</time>
-                </div>
-                <p class="user-photos__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <button class="user-photos__like user-photos__like--panorama" type="button">
-                  <span class="user-photos__like-text">Нравится:</span>
-                  <span class="user-photos__like-number">215</span>
-                </button>
-            </div>
-            </article>
-          </li>
-          <li class="user-photos__item">
-            <article class="user-photos__post">
-              <a class="user-photos__link" href="#">
-                <picture>
-                  <source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg">
-                  <source media="(min-width:960px)" srcset="img/photo-car-desktop@1x.jpg">
-                  <img class="user-photos__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Белый автомобиль на сером фоне.">
-                </picture>
-              </a>
-              <div class="user-photos__post-wrapper">
-                <div class="user-photos__author">
-                  <cite class="user-photos__author-name">Левон</cite>
-                  <time class="user-photos__time" datetime="2019-11-11T18:00">(5 часов назад)</time>
-                </div>
-                <p class="user-photos__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <button class="user-photos__like" type="button">
-                  <span class="user-photos__like-text">Нравится:</span>
-                  <span class="user-photos__like-number">356</span>
-                </button>
-            </div>
-            </article>
-          </li>
-          <li class="user-photos__item">
-            <article class="user-photos__post">
-              <a class="user-photos__link" href="#">
-                <picture>
-                  <source media="(min-width:660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                  <source media="(min-width:960px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                  <img class="user-photos__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка.">
-                </picture>
-              </a>
-              <div class="user-photos__post-wrapper">
-                <div class="user-photos__author">
-                  <cite class="user-photos__author-name">Антон</cite>
-                  <time class="user-photos__time" datetime="2019-11-11T11:00">(12 часов назад)</time>
-                </div>
-                <p class="user-photos__description">Соседи будут рады!</p>
-                <button class="user-photos__like" type="button">
-                  <span class="user-photos__like-text">Нравится:</span>
-                  <span class="user-photos__like-number">666</span>
-                </button>
-            </div>
-            </article>
-          </li>
-          <li class="user-photos__item">
-            <article class="user-photos__post">
-              <a class="user-photos__link" href="#">
-                <picture>
-                  <source media="(min-width:660px)" srcset="img/photo-window-tablet@1x.jpg">
-                  <source media="(min-width:960px)" srcset="img/photo-window-desktop@1x.jpg">
-                  <img class="user-photos__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Стеклянная крыша.">
-                </picture>
-              </a>
-              <div class="user-photos__post-wrapper">
-                <div class="user-photos__author">
-                  <cite class="user-photos__author-name">Борис</cite>
-                  <time class="user-photos__time" datetime="2019-11-11T03:00">(20 часов назад)</time>
-                </div>
-                <p class="user-photos__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <button class="user-photos__like" type="button">
-                  <span class="user-photos__like-text">Нравится:</span>
-                  <span class="user-photos__like-number">215</span>
-                </button>
-            </div>
-            </article>
-          </li>
-          <li class="user-photos__item">
-            <article class="user-photos__post">
-              <a class="user-photos__link" href="#">
-                <picture>
-                  <source media="(min-width:660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                  <source media="(min-width:960px)" srcset="img/photo-fair-desktop@1x.jpg">
-                  <img class="user-photos__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Шатер, в котором продаются арбузы и дыни.">
-                </picture>
-              </a>
-              <div class="user-photos__post-wrapper">
-                <div class="user-photos__author">
-                  <cite class="user-photos__author-name">Сергей</cite>
-                  <time class="user-photos__time" datetime="2019-11-10T22:00">(25 часов назад)</time>
-                </div>
-                <p class="user-photos__description">Самая кубанская в мире!</p>
-                <button class="user-photos__like" type="button">
-                  <span class="user-photos__like-text">Нравится:</span>
-                  <span class="user-photos__like-number">4</span>
-                </button>
-            </div>
-            </article>
-          </li>
-          <li class="user-photos__item">
-            <article class="user-photos__post">
-              <a class="user-photos__link" href="#">
-                <picture>
-                  <source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                  <source media="(min-width:960px)" srcset="img/photo-pov-desktop@1x.jpg">
-                  <img class="user-photos__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото ног на фоне горного склона.">
-                </picture>
-              </a>
-              <div class="user-photos__post-wrapper">
-                <div class="user-photos__author">
-                  <cite class="user-photos__author-name">Максим</cite>
-                  <time class="user-photos__time" datetime="2019-11-10T07:00">(40 часов назад)</time>
-                </div>
-                <p class="user-photos__description">Где снег-то?</p>
-                <button class="user-photos__like" type="button">
-                  <span class="user-photos__like-text">Нравится:</span>
-                  <span class="user-photos__like-number">150</span>
-                </button>
-            </div>
-            </article>
-          </li>
-          <li class="user-photos__item">
-            <article class="user-photos__post">
-              <a class="user-photos__link" href="#">
-                <picture>
-                  <source media="(min-width:660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                  <source media="(min-width:960px)" srcset="img/photo-wing-desktop@1x.jpg">
-                  <img class="user-photos__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета на фоне закатного неба.">
-                </picture>
-              </a>
-              <div class="user-photos__post-wrapper">
-                <div class="user-photos__author">
-                  <cite class="user-photos__author-name">Надежда</cite>
-                  <time class="user-photos__time" datetime="2019-11-10T02:00">(45 часов назад)</time>
-                </div>
-                <p class="user-photos__description">Всем GM и взаимные лайки!</p>
-                <button class="user-photos__like" type="button">
-                  <span class="user-photos__like-text">Нравится:</span>
-                  <span class="user-photos__like-number">2560</span>
-                </button>
-            </div>
-            </article>
-          </li>
-        </ul>
       </section>
       <form class="form-upload" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Разместите вашу фотографию</h2>
         <div class="form-upload__text-wrapper">
           <p class="form-upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         </div>
-        <div class="form-upload__wrapper">
+        <div class="form-upload__image-wrapper">
           <div class="form-upload__file visually-hidden">
             <label class="form-upload__label" for="file">Выберите фото для загрузки</label>
             <input class="form-upload__input" type="file" id="file" name="file">
@@ -225,21 +229,30 @@
                     <span class="visually-hidden">Обрезать</span>
                     <img src="https://via.placeholder.com/44x44" width="44" height="44">
                   </button>
-                  <input class="tools-list__range tools-list__range--active" type="range">
+                  <div class="tools-list__range tools-list__range--crop" type="range">
+                    <div class="tools-list__scale"></div>
+                    <div class="tools-list__toggle"></div>
+                  </div>
                 </li>
                 <li class="tools-list__item">
                   <button class="tools-list__button" type="button">
                     <span class="visually-hidden">Изменить заливку</span>
                     <img src="https://via.placeholder.com/48x43" width="48" height="43">
                   </button>
-                  <input class="tools-list__range" type="range">
+                  <div class="tools-list__range tools-list__range--fill" type="range">
+                    <div class="tools-list__scale"></div>
+                    <div class="tools-list__toggle"></div>
+                  </div>
                 </li>
                 <li class="tools-list__item">
                   <button class="tools-list__button" type="button">
                     <span class="visually-hidden">Изменить контраст</span>
                     <img src="https://via.placeholder.com/32x32" width="32" height="32">
                   </button>
-                  <input class="tools-list__range" type="range">
+                  <div class="tools-list__range tools-list__range--contrast" type="range">
+                    <div class="tools-list__scale"></div>
+                    <div class="tools-list__toggle"></div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -253,39 +266,41 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__link" href="index.html">
-          <img class="page-footer__image" src="https://via.placeholder.com/147x40" width="147" height="40" alt=" Логотип приложения Пинк.">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
-              <span class="visually-hidden">Пинк в Твиттере</span>
-              <img class="social__image" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Приложение Пинк в Твиттере">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <span class="visually-hidden">Пинк в Фейсбуке</span>
-              <img class="social__image" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Приложение Пинк в Фейсбуке">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              <span class="visually-hidden">Пинк на Ютьюбе</span>
-              <img class="social__image" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Приложение Пинк на Ютьюбе">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">HTML Academy</span>
-          <svg class="copyright__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
-          </svg>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__link" href="index.html">
+            <img class="page-footer__image" src="https://via.placeholder.com/147x40" width="147" height="40" alt=" Логотип приложения Пинк.">
         </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Пинк в Твиттере</span>
+                <img class="social__image" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Приложение Пинк в Твиттере">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Пинк в Фейсбуке</span>
+                <img class="social__image" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Приложение Пинк в Фейсбуке">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <span class="visually-hidden">Пинк на Ютьюбе</span>
+                <img class="social__image" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Приложение Пинк на Ютьюбе">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <svg class="copyright__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
 

@@ -18,6 +18,8 @@
 
 .site-list__link {
   color: $white;
+  display: block;
+  height: 100%;
 
   &:hover {
     color: $lipstick;

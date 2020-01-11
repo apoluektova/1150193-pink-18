@@ -1,5 +1,13 @@
+.user-photos {
+  padding: 0;
+}
+
 .user-photos__wrapper {
-  padding: 56px 39px 56px 40px;
+  @include wrapper
+}
+
+.user-photos__slogan {
+  padding: 56px 18px 56px 19px;
 }
 
 .user-photos__text {
@@ -29,6 +37,10 @@
 
   &--panorama {
     width: 100vw;
+    max-width: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -71,20 +83,51 @@
 }
 
 @media (min-width: $tablet-width) {
-  .user-photos__wrapper {
+  .user-photos__slogan {
     padding: 100px 111px 80px 113px;
+  }
+
+  .user-photos {
+    overflow: hidden;
+  }
+
+  .user-photos__item {
+    margin-right: 20px;
+
+    &--panorama {
+      display: block;
+      width: 100%;
+    }
+
+    &:nth-of-type(2n+1) {
+      margin-right: 0;
+    }
+
+    &:first-of-type {
+      padding: 0;
+    }
   }
 
   .user-photos__post-wrapper {
     width: 300px;
     padding: 31px 29px 28px 27px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
     &--panorama {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: row;
       justify-content: space-between;
+      flex-wrap: wrap;
       width: 620px;
     }
+  }
+
+  .user-photos__post {
+    display: flex;
+    flex-direction: column;
   }
 
   .user-photos__image {
@@ -92,23 +135,33 @@
 
     &--panorama {
       width: 100vw;
+      max-width: none;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
-  .user-photos__author {
-    order: 1;
+  .user-photos__author--panorama {
+    /*order: 1;*/
+    width: 150px;
   }
 
   .user-photos__like {
-    order: 2;
+    margin-top: auto;
+    padding-left: 0;
+    padding-right: 140px;
 
     &--panorama {
-      padding-left: 0;
-      margin-right: 30px;
+    /*order: 1;*/
+    padding-right: 30px;
+    padding-left: 0;
+    width: 125px;
     }
   }
-  .user-photos__description {
-    order: 3;
+
+  .user-photos__description--panorama {
+    order: 1;
     margin-bottom: 23px;
   }
 
@@ -118,27 +171,11 @@
     margin: 0 auto;
     width: 620px;
   }
-
-  .user-photos__item {
-    display: flex;
-    margin-right: 20px;
-    /*padding-left: 20px;*/
-
-    &:nth-of-type(2n+1) {
-      margin-right: 0;
-      /*padding-left: 0;
-      padding-right: 20px;*/
-    }
-
-    &:first-of-type {
-      padding: 0;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .user-photos__wrapper {
-    padding: 100px 316px 92px 316px;
+  .user-photos__slogan {
+    padding: 100px 240px 92px 240px;
   }
   .user-photos__post-wrapper {
     padding: 31px 32px 29px 28px;

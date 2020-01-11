@@ -2,10 +2,10 @@
   width: auto;
   background-color: $dark-grey;
   height: 174px;
-  padding: 36px 46px auto 48px;
+  padding: 36px 20px 0 20px;
   &--index {
     height: 399px;
-    padding: 28px 49px auto 50px;
+    padding: 28px 20px 0 20px;
   }
 }
 
@@ -18,14 +18,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-description--index {
+  .page-description {
+    height: 331px;
+    padding: 81px 93px 0 93px;
+
+    &--index {
     height: auto;
     padding: 0 56px 39px 58px;
     }
+  }
   .page-description__text {
     font-size: 40px;
     line-height: normal;
-    margin-bottom: 61px;
   }
 }
 
@@ -35,7 +39,7 @@
     height: auto;
 
     &--index {
-      padding: 0;
+      padding: 0 33px 61px 36px;
     }
   }
   .page-description__text {

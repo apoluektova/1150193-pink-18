@@ -1,6 +1,11 @@
 .contacts {
-  padding: 50px 39px 21px 39px;
+  padding-top: 50px;
 }
+
+.contacts__wrapper {
+  @include wrapper;
+}
+
 .contacts__list {
   @include no-list;
 }
@@ -45,7 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 56px 22px 0 22px;
+    padding-top: 56px;
   }
   .contacts__intro {
     font-size: 40px;

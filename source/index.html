@@ -9,41 +9,44 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__link">
-          <picture>
-            <source media="(min-width:660px)" srcset="img/svg/logo-pink-white-tablet.svg">
-            <source media="(min-width:960px)" srcset="img/svg/logo-pink-white-desktop.svg">
-            <img class="page-header__logo-image" src="img/svg/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип приложения Пинк." >
-          </picture>
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-        </button>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link site-list__link--active">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
+        <div class="page-header__container">
+          <a class="page-header__link">
+            <picture>
+              <source media="(min-width:660px)" srcset="img/svg/logo-pink-white-tablet.svg">
+              <source media="(min-width:960px)" srcset="img/svg/logo-pink-white-desktop.svg">
+              <img class="page-header__logo-image" src="img/svg/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип приложения Пинк." >
+            </picture>
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
         </div>
-      </nav>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link site-list__link--active">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Пинк - взгляните на жизнь иначе!</h1>
-      <div class="page-main__wrapper">
-        <div class="page-main__index-wrapper">
+      <div class="promo">
+      <div class="promo__wrapper">
+        <div class="promo__index-wrapper">
           <div class="page-description page-description--index">
             <p class="page-description__text">Взгляните на жизнь иначе!</p>
           </div>
@@ -74,33 +77,36 @@
           </section>
         </div>
       </div>
+      </div>
       <section class="features">
         <h2 class="visually-hidden">Характеристики приложения Пинк</h2>
-        <div class="features__wrapper">
-          <p class="features__slogan">Устали от серости мегаполиса?</p>
-          <p class="features__slogan">Нам есть, что вам<br>предложить!</p>
-        </div>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__title">Поднимает настроение</h3>
-            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Меняет мир вокруг</h3>
-            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Заводит новых друзей</h3>
-            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+          <div class="features__intro">
+            <p class="features__slogan">Устали от серости мегаполиса?</p>
+            <p class="features__slogan">Нам есть, что вам<br>предложить!</p>
+          </div>
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__title">Поднимает настроение</h3>
+              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
       </section>
       <section class="effect">
         <h2 class="visually-hidden">Эффект приложения Пинк</h2>
         <div class="effect__wrapper">
-          <h3 class="effect__title">Эффект на 24 часа!</h3>
-          <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+          <div class="effect__text">
+            <h3 class="effect__title">Эффект на 24 часа!</h3>
+            <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
       <section class="reviews">
@@ -195,10 +201,50 @@
           <picture>
             <source media="(min-width:660px)" srcset="img/bg-map-tablet@1x.jpg">
             <source media="(min-width:960px)" srcset="img/bg-map-desktop@1x.jpg">
-            <img class="map__img" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Офис разработчика находится по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, 19/8.">
+            <img src="img/bg-map-mobile@1x.png" alt="Офис разработчика находится по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, 19/8.">
           </picture>
         </div>
       </section>
     </main>
+
+    <footer class="page-footer page-footer--index">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__link" href="index.html">
+            <img class="page-footer__image" src="https://via.placeholder.com/147x40" width="147" height="40" alt=" Логотип приложения Пинк.">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Пинк в Твиттере</span>
+                <img class="social__image" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Приложение Пинк в Твиттере">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Пинк в Фейсбуке</span>
+                <img class="social__image" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Приложение Пинк в Фейсбуке">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <span class="visually-hidden">Пинк на Ютьюбе</span>
+                <img class="social__image" src="https://via.placeholder.com/46x46" width="46" height="46" alt="Приложение Пинк на Ютьюбе">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <svg class="copyright__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>

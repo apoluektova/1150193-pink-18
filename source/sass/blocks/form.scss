@@ -1,14 +1,19 @@
+.form__wrapper {
+  @include wrapper;
+}
 .form__text-block {
-  padding: 56px 24px 0 25px;
+  padding: 56px 4px 49px 5px;
 }
 
 .form__fields-block {
-  padding: 49px 22px 44px 22px;
+  padding: 0 2px 44px 2px;
+
+  &--contacts {
+    padding-top: 41px;
+  }
 }
 
 .form__inner-wrapper {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 29px;
 
   &:last-child {
@@ -24,6 +29,7 @@
   text-transform: uppercase;
   margin-left: 21px;
   margin-bottom: 16px;
+  display: block;
 }
 
 .form__text {
@@ -57,7 +63,7 @@
 
 .form__buttons-block {
   background-color: $light-grey;
-  padding: 41px 22px 44px 22px;
+  padding: 41px 2px 44px 2px;
 }
 
 .form__header {
@@ -68,6 +74,7 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 42px;
+  display: block;
 
   &--contacts {
     display: none;
@@ -95,9 +102,16 @@
 }
 
 .form__comment-block {
-  padding: 41px 22px 24px 22px;
-  display: flex;
-  flex-direction: column;
+  padding: 41px 2px 24px 2px;
+}
+
+.form__comment-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $lipstick;
+  font-weight: 400;
+  margin-bottom: 19px;
+  display: block;
 }
 
 .form__textarea {
@@ -108,6 +122,7 @@
   padding: 23px 28px 23px 19px;
   margin-bottom: 52px;
   min-height: 197px;
+  width: 100%;
 }
 
 .form__submit {
@@ -122,6 +137,7 @@
   outline: none;
   padding: 20px 15px 21px 15px;
   margin-bottom: 46px;
+  width: 100%;
 
   &:hover {
     background-color: $dark-green;
@@ -140,6 +156,7 @@
 .form__asterisk {
   @include page-text;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .form__asterisk-sign {
@@ -149,9 +166,11 @@
 
 @media(min-width: $tablet-width) {
   .form {
+    padding: 100px 0 52px;
+  }
+  .form__wrapper {
     display: flex;
     flex-direction: column;
-    padding: 100px 22px 52px 22px;
   }
   .form__text--hidden {
     display: block;
@@ -175,6 +194,7 @@
     }
   }
   .form__inner-wrapper {
+    display: flex;
     flex-direction: row;
 
     &--contacts {
@@ -249,12 +269,14 @@
 
 @media (min-width: $desktop-width) {
   .form {
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  .form__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 100px 132px 0 132px;
   }
   .form__text-block {
     padding: 0;

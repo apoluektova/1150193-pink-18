@@ -1,25 +1,4 @@
 .page-main {
-  @include container;
+  margin: 0 auto;
   width: 100%;
-}
-
-@media (min-width: $tablet-width) {
-  .page-main__wrapper {
-    width: 100%;
-    background-color: $dark-grey;
-    padding: 103px 20px 112px 20px;
-  }
-  .page-main__index-wrapper {
-    background-color: $dark-grey;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-main__wrapper {
-    padding: 121px 0 125px 130px;
-  }
 }

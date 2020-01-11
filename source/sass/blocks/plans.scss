@@ -4,8 +4,12 @@
 }
 
 .plans__wrapper {
+  @include wrapper;
   margin: 0 -22px;
   overflow: hidden;
+}
+.plans__table {
+  margin-left: -100%;
 }
 
 .plans__list {
@@ -47,19 +51,27 @@
 
 @media (min-width: $tablet-width) {
   .plans {
-    padding: 114px 22px 70px 22px;
+    padding: 114px 0 70px;
   }
   .plans__wrapper {
+    @include wrapper;
     margin: 0;
     overflow: auto;
   }
   .plans__toggles {
     display: none;
   }
+  .plans__table {
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .plans {
-    padding: 159px 132px 98px 130px;
+    padding-top: 159px;
+    padding-bottom: 98px;
+  }
+  .plans__wrapper {
+    @include wrapper;
   }
 }

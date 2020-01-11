@@ -1,10 +1,14 @@
 .form-upload__text-wrapper {
-  padding: 49px 32px 48px 32px;
+  @include wrapper;
+  padding-top: 49px;
+  padding-bottom: 48px;
 }
 
-.form-upload__wrapper {
+.form-upload__image-wrapper {
+  @include wrapper;
   background-color: $light-grey;
-  padding: 20px 22px 0 18px;
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 
 .form-upload__edit {
@@ -18,8 +22,9 @@
 
 .form-upload__text {
   @include page-text;
-  width: 253px;
-  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 12px;
+  margin: 0;
 }
 
 
@@ -65,10 +70,22 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form-upload__wrapper {
+  .form-upload__text-wrapper {
+    padding-top: 74px;
+    padding-bottom: 72px;
+  }
+  .form-upload__text {
+    padding-right: 102px;
+    padding-left: 100px;
+  }
+  .form-upload__image-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 57px 20px 54px 20px;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+  .form-upload__image {
+    margin: 0;
   }
   .form-upload__edit-wrapper {
     width: 275px;
@@ -79,13 +96,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-upload__wrapper {
-    width: 940px;
-    margin: 0 auto;
+  .form-upload {
+    @include wrapper;
+  }
+  .form-upload__text-wrapper {
+    padding: 68px 261px 69px;
+  }
+  .form-upload__image-wrapper {
     padding: 57px 60px 57px 80px;
   }
   .form-upload__edit-wrapper {
-    width: 410px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

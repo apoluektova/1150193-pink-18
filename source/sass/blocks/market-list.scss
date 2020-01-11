@@ -2,9 +2,22 @@
   @include no-list;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 205px;
   margin: 0 auto;
+}
+
+.market-list__item {
+  margin-right: 34px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.market-list__link {
+  display: block;
+  height: 100%;
 }
 
 @media (min-width: $desktop-width) {
