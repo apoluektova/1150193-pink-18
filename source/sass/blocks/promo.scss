@@ -1,0 +1,25 @@
+@media (min-width: $tablet-width) {
+  .promo {
+    background-color: $dark-grey;
+    padding-top: 103px;
+    padding-bottom: 112px;
+
+  }
+  .promo__wrapper {
+    @include wrapper;
+  }
+  .promo__index-wrapper {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding-top: 121px;
+    padding-bottom: 125px;
+  }
+
+  .promo__wrapper {
+    @include wrapper;
+  }
+}

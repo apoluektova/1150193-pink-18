@@ -1,9 +1,24 @@
+.contacts {
+  padding-top: 50px;
+}
+
+.contacts__wrapper {
+  @include wrapper;
+}
+
 .contacts__list {
   @include no-list;
 }
 
 .contacts__intro {
   @include page-slogan;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  width: 222px;
+}
+
+.contacts__item {
+  margin-bottom: 28px;
 }
 
 .contacts__text {
@@ -30,5 +45,34 @@
 
   &--mail:active {
     color: rgba($dark-grey, 0.3)
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 56px;
+  }
+  .contacts__intro {
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 57px;
+    width: 369px;
+  }
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .contacts__item {
+    width: 250px;
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__intro {
+    font-size: 50px;
+    line-height: normal;
+    width: 461px;
   }
 }

@@ -1,0 +1,55 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: block;
+    padding-top: 102px;
+    padding-bottom: 83px;
+    text-align: left;
+  }
+  .effect__wrapper {
+    @include wrapper;
+  }
+  .effect__text {
+    padding: 0 16px 0 309px;
+  }
+  .effect__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: $black;
+  }
+  .effect__description {
+    font-size: 14px;
+  }
+  .effect__link {
+    font-size: 14px;
+    color: $lipstick;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    padding-top: 17px;
+    padding-bottom: 67px;
+    background-color: $light-grey;
+  }
+  .effect__wrapper {
+    @include wrapper;
+  }
+  .effect__text {
+    padding: 97px 49px 51px 366px;
+  }
+  .effect__title {
+    @include desktop-title;
+  }
+  .effect__description {
+    @include desktop-desc;
+  }
+  .effect__link {
+    @include desktop-desc;
+  }
+}

@@ -61,6 +61,26 @@
   }
 }
 
-@mixin mobile-width {
-  width: 320px;
+@mixin desktop-title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+@mixin desktop-desc {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@mixin wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 130px;
+  }
 }

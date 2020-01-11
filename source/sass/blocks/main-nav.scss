@@ -1,8 +1,24 @@
 .main-nav {
   color: $white;
   line-height: 32px;
+  background-color: $dark-grey;
 }
 
 .main-nav__list {
   @include no-list;
+}
+
+.main-nav__toggle {
+  width: 24px;
+  height: 23px;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    /*background-color: rgba($dark-grey, 0.3);*/
+    width: 70%;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
 }

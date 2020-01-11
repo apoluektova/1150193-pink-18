@@ -1,13 +1,44 @@
+.form__wrapper {
+  @include wrapper;
+}
+.form__text-block {
+  padding: 56px 4px 49px 5px;
+}
+
+.form__fields-block {
+  padding: 0 2px 44px 2px;
+
+  &--contacts {
+    padding-top: 41px;
+  }
+}
+
+.form__inner-wrapper {
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .form__label {
   font-size: 14px;
   text-align: left;
   line-height: 30px;
   color: $lipstick;
   text-transform: uppercase;
+  margin-left: 21px;
+  margin-bottom: 16px;
+  display: block;
 }
 
 .form__text {
   @include page-text;
+  margin: 0;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .form__input,
@@ -26,10 +57,13 @@
 
 .form__input {
   @include placeholder;
+  width: 100%;
+  padding: 22px 20px 18px 20px;
 }
 
 .form__buttons-block {
   background-color: $light-grey;
+  padding: 41px 2px 44px 2px;
 }
 
 .form__header {
@@ -38,10 +72,26 @@
   text-transform: uppercase;
   color: $lipstick;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 42px;
+  display: block;
+
+  &--contacts {
+    display: none;
+  }
 }
 
 .form__list {
   @include no-list;
+  text-align: left;
+}
+
+.form__item {
+  margin-bottom: 47px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__button-label {
@@ -51,10 +101,28 @@
   text-align: left;
 }
 
+.form__comment-block {
+  padding: 41px 2px 24px 2px;
+}
+
+.form__comment-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $lipstick;
+  font-weight: 400;
+  margin-bottom: 19px;
+  display: block;
+}
+
 .form__textarea {
   font-size: inherit;
   line-height: 30px;
   text-align: left;
+  color: $dark-grey;
+  padding: 23px 28px 23px 19px;
+  margin-bottom: 52px;
+  min-height: 197px;
+  width: 100%;
 }
 
 .form__submit {
@@ -67,6 +135,9 @@
   line-height: 30px;
   text-transform: uppercase;
   outline: none;
+  padding: 20px 15px 21px 15px;
+  margin-bottom: 46px;
+  width: 100%;
 
   &:hover {
     background-color: $dark-green;
@@ -85,9 +156,164 @@
 .form__asterisk {
   @include page-text;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .form__asterisk-sign {
   @include page-text;
   color: $lipstick;
+}
+
+@media(min-width: $tablet-width) {
+  .form {
+    padding: 100px 0 52px;
+  }
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__text--hidden {
+    display: block;
+  }
+  .form__text-block {
+    order: 1;
+    margin-bottom: 76px;
+    padding: 0;
+  }
+  .form__fields-block {
+    padding: 0;
+
+    &--name {
+      order: 2;
+      margin-bottom: 70px;
+    }
+
+    &--contacts {
+      order: 4;
+      margin-bottom: 69px;
+    }
+  }
+  .form__inner-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    &--contacts {
+      flex-direction: column;
+    }
+  }
+  .form__label {
+    margin: 0;
+    margin-right: 22px;
+    align-self: center;
+
+    &--contacts {
+      order: 2;
+      align-self: flex-start;
+      margin-right: 0;
+      margin-left: 18px;
+    }
+  }
+  .form__input--contacts {
+    margin-bottom: 21px;
+  }
+  .form__buttons-block {
+    background-color: inherit;
+    padding: 0;
+    margin-bottom: 69px;
+
+    &--app {
+      order: 3;
+    }
+
+    &--achievements {
+      order: 5;
+    }
+  }
+  .form__border-wrapper {
+    border: 2px solid $medium-grey;
+    padding: 54px 60px 50px 60px;
+
+    &--comment {
+      margin-bottom: 71px;
+    }
+  }
+  .form__comment-block {
+    padding: 0;
+    order: 6;
+  }
+  .form__header {
+    margin: 0;
+
+    &--contacts {
+      display: block;
+    }
+  }
+  .form__textarea {
+    width: 496px;
+    min-height: 189px;
+    padding: 23px 26px 23px 20px;
+  }
+  .form__submit-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form__submit {
+    margin-bottom: 0;
+    width: 296px;
+  }
+  .form__asterisk {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  .form__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .form__text-block {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
+  .form__fields-block--name {
+    width: 433px;
+    padding: 0;
+  }
+  .form__buttons-block--app {
+    width: 431px;
+    padding: 0;
+  }
+  .form__fields-block--contacts {
+    width: 100%;
+    padding: 0;
+  }
+  .form__buttons-block--achievements {
+    width: 100%;
+    padding: 0;
+  }
+  .form__comment-block {
+    width: 100%;
+    padding: 0;
+  }
+  .form__list--achievements {
+    /*;display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 200px;*/
+    column-count: 3;
+  }
+  .form__textarea {
+    width: 816px;
+    height: 124px;
+    padding: 23px 20px;
+  }
 }
