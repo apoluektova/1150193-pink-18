@@ -26,7 +26,6 @@
 
 .features__slogan {
   @include page-slogan;
-  margin: 0 auto;
   margin-bottom: 43px;
 
   &:last-of-type {
@@ -64,6 +63,12 @@
   }
   .features__list {
     padding: 104px 38px 45px 310px;
+  }
+  .features__title {
+    text-align: left;
+  }
+  .features__description {
+    text-align: left;
   }
   /*.features__list::after {
     content: "";

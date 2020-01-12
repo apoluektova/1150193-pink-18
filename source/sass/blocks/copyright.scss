@@ -1,7 +1,9 @@
 .copyright {
   display: flex;
   align-items: center;
-  width: 128px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .copyright__text {
@@ -10,13 +12,20 @@
   text-align: left;
   color: $dark-grey;
   margin: 0;
-  margin-right: 15px;
 }
 
 .copyright__logo {
   fill: $lipstick;
+  margin-left: 15px;
 }
 
 .copyright__link {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 33.333333%;
+    justify-content: flex-end;
+  }
 }

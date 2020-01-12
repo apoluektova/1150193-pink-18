@@ -1,5 +1,6 @@
 .download-app {
   background-color: $download-background;
+  padding: 28px 20px 35px 20px;
 }
 
 .download-app__button {
@@ -8,9 +9,7 @@
   padding: 19px 32px 16px 32px;
   display: block;
   color: $white;
-  margin: 0 auto;
   margin-bottom: 32px;
-  width: 281px;
 
 
   &:hover {
@@ -28,25 +27,20 @@
   font-size: 14px;
   font-weight: 300;
   color: $white;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .download-app {
     background-color: transparent;
-    width: 300px;
+    padding: 0;
   }
   .download-app__description {
     font-size: inherit;
   }
-  .download-app__button {
-    width: 300px;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .download-app__description {
-    width: 294px;
-  }
   .download-app__button {
     margin-bottom: 67px;
   }

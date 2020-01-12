@@ -6,7 +6,7 @@
 }
 
 .form__fields-block {
-  padding: 0 2px 44px 2px;
+  padding-bottom: 44px;
 
   &--contacts {
     padding-top: 41px;
@@ -63,7 +63,7 @@
 
 .form__buttons-block {
   background-color: $light-grey;
-  padding: 41px 2px 44px 2px;
+  padding: 41px 0 44px;
 }
 
 .form__header {
@@ -195,7 +195,6 @@
   }
   .form__inner-wrapper {
     display: flex;
-    flex-direction: row;
 
     &--contacts {
       flex-direction: column;
@@ -215,6 +214,7 @@
   }
   .form__input--contacts {
     margin-bottom: 21px;
+    display: block;
   }
   .form__buttons-block {
     background-color: inherit;
@@ -232,9 +232,15 @@
   .form__border-wrapper {
     border: 2px solid $medium-grey;
     padding: 54px 60px 50px 60px;
+    border-top: 0;
 
     &--comment {
       margin-bottom: 71px;
+    }
+    &--contacts {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
   }
   .form__comment-block {
@@ -242,11 +248,31 @@
     order: 6;
   }
   .form__header {
-    margin: 0;
+    margin: 0 0 -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &--contacts {
-      display: block;
+      margin: 0 0 -8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+  }
+  .form__header::before {
+    content: "";
+    height: 2px;
+    flex-grow: 1;
+    background: $medium-grey;
+    margin-right: 10px;
+  }
+  .form__header::after {
+    content: "";
+    height: 2px;
+    flex-grow: 1;
+    background: $medium-grey;
+    margin-left: 10px;
   }
   .form__textarea {
     width: 496px;
@@ -277,6 +303,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .form__border-wrapper--contacts {
+    flex-direction: row;
+  }
+  .form__inner-wrapper--contacts {
+    margin-bottom: 0;
+    flex-grow: 1;
+    margin-right: 74px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
   .form__text-block {
     padding: 0;
@@ -312,8 +350,11 @@
     column-count: 3;
   }
   .form__textarea {
-    width: 816px;
+    width: 100%;
     height: 124px;
     padding: 23px 20px;
+  }
+  .form__input--contacts {
+    width: 100%;
   }
 }

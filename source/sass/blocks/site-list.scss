@@ -10,10 +10,6 @@
   color: $white;
   box-shadow: 0px 1px 0 0 $black, inset 0px 1px 0 0 rgba($black, 0.15);
   padding: 26px 23px 25px 19px;
-
-  &--active {
-    color: $white;
-  }
 }
 
 .site-list__link {
@@ -40,16 +36,18 @@
   .site-list {
     display: flex;
     width: auto;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   .site-list__item {
     box-shadow: none;
-    font-size: inherit;
     font-weight: 400;
     line-height: 18px;
-    text-align: left;
     text-transform: none;
     padding: 0;
-    align-items: center;
+    margin-left: 83px;
+
+    &--first-of-type {
+      margin-left: 0;
+    }
   }
 }
