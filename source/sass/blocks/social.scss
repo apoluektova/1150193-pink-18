@@ -1,9 +1,10 @@
 .social {
-  width: 172px;
+  width: 100%;
 }
 .social__list {
   @include no-list;
   display: flex;
+  justify-content: center;
 }
 
 .social__item {
@@ -12,4 +13,10 @@
 
 .social__item:last-of-type {
   margin-right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 33.333333%;
+  }
 }

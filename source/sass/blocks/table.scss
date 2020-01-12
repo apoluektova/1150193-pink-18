@@ -58,6 +58,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .table {
+    margin-bottom: 0;
+  }
   .table__cell--first {
     display: table-cell;
   }

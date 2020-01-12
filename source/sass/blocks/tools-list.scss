@@ -39,7 +39,8 @@
 
 .tools-list__range {
   position: absolute;
-  left: 18px;
+  left: 20px;
+  right: 20px;
   bottom: 0;
 
   &--fill,
@@ -49,7 +50,6 @@
 }
 
 .tools-list__scale {
-  width: 240px;
   height: 2px;
   background-color: $black;
 }
@@ -68,20 +68,28 @@
 
 @media (min-width: $tablet-width) {
   .tools-list {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    padding: 0;
+  }
+  .tools-list__range {
+    left: auto;
+    right: auto;
+    position: relative;
+    bottom: auto;
+    flex-grow: 1;
+    margin-left: 20px;
   }
   .tools-list__range--fill,
   .tools-list__range--contrast {
     display: block;
   }
   .tools-list__scale {
-    width: 202px;
+    width: auto;
   }
   .tools-list__item {
-    display: flex;
-    justify-content: space-between;
-    width: 275px;
+    width: auto;
+    margin: 0;
+    padding-right: 18px;
     border-bottom: 1px solid rgba($black, 0.1);
   }
   .tools-list__button {
@@ -91,17 +99,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .tools-list {
-    width: 410px;
-  }
   .tools-list__item {
+    padding-right: 30px;
     width: auto;
   }
   .tools-list__button {
     width: 48px;
   }
   .tools-list__range {
-    width: 288px;
-    margin: 0;
+    margin-left: 44px;
   }
 }

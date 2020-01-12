@@ -1,11 +1,11 @@
 .plans {
   background-color: $light-grey;
-  padding: 127px 22px 51px 22px;
+  padding: 127px 20px 51px 20px;
 }
 
 .plans__wrapper {
   @include wrapper;
-  margin: 0 -22px;
+  margin: 0 -20px;
   overflow: hidden;
 }
 .plans__table {
