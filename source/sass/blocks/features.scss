@@ -133,7 +133,7 @@
 
 @media (min-width: $desktop-width) {
   .features__wrapper {
-    padding-top: 200px;
+    padding-top: 70px;
     padding-bottom: 20px;
     background-color: $light-grey;
     position: relative;
@@ -153,7 +153,7 @@
   }
   .features__intro {
     padding-top: 70px;
-    padding-bottom: 75px;
+    padding-bottom: 0;
   }
   .features__slogan {
     font-size: 50px;
@@ -162,6 +162,7 @@
   .features__list {
     @include wrapper;
     display: flex;
+    background: none;
 
     &::before {
       display: none;
@@ -176,6 +177,7 @@
     margin: 0;
     margin-right: 25px;
     padding-left: 5px;
+    padding-top: 7px;
 
     &:last-of-type {
       margin-right: 0;

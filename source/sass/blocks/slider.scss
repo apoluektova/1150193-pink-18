@@ -28,3 +28,9 @@
   border: 3px solid $dark-grey;
   opacity: 1;
 }
+
+ @media (min-width: $desktop-width) {
+   .slider__toggles {
+     display: none;
+   }
+ }

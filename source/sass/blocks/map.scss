@@ -45,3 +45,21 @@
     }
   }
 }
+
+@media (min-width: &$desktop-width) {
+  .map {
+    height: 505px;
+    background-image: url("../img/svg/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
+    background-size: 36px 36px, 1200px auto;
+    background-position: center 268px, 0 -273px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/svg/icon-map-marker.svg"), url("../img/bg-map-desktop@2x.jpg");
+      background-size: 36px 36px, 1200px auto;
+    }
+
+    &::before {
+      height: 123px;
+    }
+  }
+}

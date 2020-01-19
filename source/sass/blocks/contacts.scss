@@ -91,9 +91,29 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 58px;
+  }
   .contacts__intro {
     font-size: 50px;
-    line-height: normal;
-    width: 461px;
+    line-height: 65px;
+    padding: 0 110px;
+    margin-bottom: 50px;
+  }
+  .contacts__list {
+    margin: 0 -9px;
+  }
+  .contacts__item:first-of-type {
+    margin-right: 0;
+  }
+  .contacts__item--mail {
+    order: 3;
+  }
+  .contacts__info {
+    line-height: 36px;
+  }
+  .contacts__text {
+    margin-bottom: 20px;
+    line-height: 22px;
   }
 }

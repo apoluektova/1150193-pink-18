@@ -82,8 +82,12 @@
 
 @media (min-width: $desktop-width) {
   .plans {
-    padding-top: 159px;
+    padding-top: 154px;
     padding-bottom: 98px;
+
+    &::before {
+      height: 95px;
+    }
   }
   .plans__wrapper {
     @include wrapper;
