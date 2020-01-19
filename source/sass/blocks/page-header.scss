@@ -7,26 +7,31 @@
   @include wrapper;
   display: flex;
   padding-top: 22px;
-  padding-bottom: 25px;
+  padding-bottom: 19px;
   justify-content: space-between;
-  box-shadow: 0px 1px 0 0 $black;
   background-color: $dark-grey;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__container {
     padding-top: 27px;
-    padding-bottom: 42px;
+    padding-bottom: 37px;
+  }
+  .page-header__logo-image {
+    width: 147px;
+    height: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    background-color: $dark-grey;
+    width: 100%;
+    background-color: rgba($black, 0.3);
     padding-top: 27px;
-    padding-bottom: 43px;
+    padding-bottom: 38px;
+    box-shadow: none;
   }
 
   .page-header__wrapper {
@@ -40,5 +45,9 @@
     padding: 0;
     max-width: 220px;
     margin: 0;
+  }
+
+  .page-header__link {
+    background-color: transparent;
   }
 }

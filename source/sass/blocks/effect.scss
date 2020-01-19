@@ -5,24 +5,62 @@
 @media (min-width: $tablet-width) {
   .effect {
     display: block;
-    padding-top: 102px;
-    padding-bottom: 83px;
+    padding-top: 59px;
+    padding-bottom: 52px;
     text-align: left;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 238px;
+      height: 276px;
+      top: 57px;
+      left: 20px;
+      background-image: url("../img/svg/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-size: 238px 276px;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      width: 202px;
+      height: 202px;
+      left: 39px;
+      top: 113px;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 155px;
+      color: $lipstick;
+      text-align: center;
+      background-color: $white;
+      border: 15px solid $lipstick;
+      border-radius: 50%;
+    }
   }
   .effect__wrapper {
     @include wrapper;
   }
   .effect__text {
-    padding: 0 16px 0 309px;
+    padding: 36px 10px 0 309px;
   }
   .effect__title {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     color: $black;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-right: 120px;
   }
   .effect__description {
     font-size: 14px;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  .effect__description br {
+    display: none;
   }
   .effect__link {
     font-size: 14px;
@@ -36,18 +74,48 @@
     padding-top: 17px;
     padding-bottom: 67px;
     background-color: $light-grey;
+
+    &::before {
+      width: 298px;
+      height: 345px;
+      top: 10px;
+      left: 131px;
+      background-size: 298px 345px;
+    }
+
+    &::after {
+      width: 253px;
+      height: 253px;
+      top: 79px;
+      left: 153px;
+      font-size: 120px;
+      line-height: 187px;
+      color: $lipstick;
+      text-align: center;
+      background-color: $light-grey;
+      border: 17px solid $lipstick;
+      border-radius: 50%;
+      padding-top: 10px;
+      padding-right: 2px;
+    }
   }
   .effect__wrapper {
     @include wrapper;
   }
   .effect__text {
-    padding: 97px 49px 51px 366px;
+    padding: 87px 48px 51px 366px;
   }
   .effect__title {
     @include desktop-title;
+    padding-right: 0;
+    margin-bottom: 23px;
   }
   .effect__description {
     @include desktop-desc;
+    margin-bottom: 32px;
+  }
+  .effect__description br {
+    display: block;
   }
   .effect__link {
     @include desktop-desc;

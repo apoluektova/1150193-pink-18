@@ -1,8 +1,16 @@
 @media (min-width: $tablet-width) {
   .promo {
     background-color: $dark-grey;
-    padding-top: 103px;
-    padding-bottom: 112px;
+    padding-top: 90px;
+    padding-bottom: 110px;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: bottom center, center -111px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+      background-size: 700px auto, 1200px auto;
+    }
 
   }
   .promo__wrapper {
@@ -15,7 +23,15 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding-top: 121px;
-    padding-bottom: 125px;
+    padding-top: 217px;
+    padding-bottom: 121px;
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: 146px bottom, top center;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1050px auto, 2560px auto;
+    }
   }
 }

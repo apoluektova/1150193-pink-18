@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 50px;
+  padding-top: 46px;
 }
 
 .contacts__wrapper {
@@ -13,29 +13,34 @@
 .contacts__intro {
   @include page-slogan;
   margin: 0 auto;
-  margin-bottom: 44px;
-  width: 222px;
+  margin-bottom: 40px;
+  padding: 0 28px;
+  line-height: 25px;
 }
 
 .contacts__item {
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
 
 .contacts__text {
   font-size: inherit;
+  line-height: 22px;
   font-weight: 700;
   color: $dark-grey;
   margin: 0;
 }
 
 .contacts__info {
+  display: block;
   font-size: 24px;
   font-weight: 300;
+  line-height: 36px;
   color: $lipstick;
   margin: 0;
 }
 
 .contacts__link {
+  display: block;
   color: $lipstick;
 
   &--mail:hover {
@@ -50,13 +55,12 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 56px;
+    padding-top: 42px;
   }
   .contacts__intro {
     font-size: 40px;
-    line-height: normal;
-    margin-bottom: 57px;
-    width: 369px;
+    line-height: 50px;
+    margin-bottom: 43px;
   }
   .contacts__list {
     display: flex;
@@ -65,7 +69,20 @@
   }
   .contacts__item {
     width: 250px;
-    margin-bottom: 52px;
+    margin-bottom: 38px;
+
+    &:first-of-type {
+      margin-right: 15px;
+    }
+  }
+  .contacts__info {
+    line-height: 34px;
+  }
+  .contacts__text {
+    line-height: 24px;
+  }
+  .contacts__link {
+    line-height: 42px;
   }
 }
 

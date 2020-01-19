@@ -15,8 +15,9 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    /*background-color: rgba($dark-grey, 0.3);*/
+    background-color: transparent;
     flex-grow: 1;
+    padding-top: 18px;
     margin-left: 30px;
   }
   .main-nav__toggle {
