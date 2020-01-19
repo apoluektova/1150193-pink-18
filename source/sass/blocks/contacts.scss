@@ -74,6 +74,10 @@
     &:first-of-type {
       margin-right: 15px;
     }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
   .contacts__info {
     line-height: 34px;
