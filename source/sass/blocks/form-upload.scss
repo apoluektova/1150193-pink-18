@@ -1,7 +1,7 @@
 .form-upload__text-wrapper {
   @include wrapper;
-  padding-top: 49px;
-  padding-bottom: 48px;
+  padding-top: 22px;
+  padding-bottom: 42px;
 }
 
 .form-upload__image-wrapper {
@@ -13,18 +13,18 @@
 
 .form-upload__edit {
   border-bottom: 1px solid rgba($black, 0.1);
-  margin-bottom: 34px;
+  margin-bottom: 39px;
 }
 
 .form-upload__image {
   margin-bottom: 42px;
+  margin-left: -4px;
 }
 
 .form-upload__text {
   @include page-text;
-  padding-right: 15px;
-  padding-left: 12px;
   margin: 0;
+  margin-left: -3px;
 }
 
 
@@ -34,8 +34,9 @@
   background-color: transparent;
   color: $lipstick;
   width: 280px;
-  padding: 15px 91px 16px 91px;
+  padding: 15px 91px 16px 87px;
   margin-bottom: 12px;
+  margin-left: -2px;
 
   &:hover {
     background-color: $lipstick;

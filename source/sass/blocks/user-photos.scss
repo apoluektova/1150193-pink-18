@@ -7,7 +7,7 @@
 }
 
 .user-photos__slogan {
-  padding: 56px 18px 56px 19px;
+  padding: 46px 18px 48px 19px;
 }
 
 .user-photos__text {
@@ -20,12 +20,16 @@
 }
 
 .user-photos__item {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .user-photos__post-wrapper {
   background-color: $light-grey;
-  padding: 25px 17px 26px 17px;
+  padding: 15px 30px 22px 17px;
+
+  &--panorama {
+    padding: 16px 37px 22px 17px;
+  }
 }
 
 .user-photos__image {
@@ -64,12 +68,14 @@
   margin: 0;
   font-size: 14px;
   text-align: left;
+  margin-bottom: 6px;
 }
 
 .user-photos__like {
   @include no-button;
   display: block;
   padding-left: 32px;
+  margin-top: auto;
 }
 
 .user-photos__like-text,
