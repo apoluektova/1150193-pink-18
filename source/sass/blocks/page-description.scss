@@ -1,12 +1,15 @@
 .page-description {
   background-color: transparent;
-  /*height: 174px;*/
   padding: 29px 20px 81px 20px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center -67px;
 
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   &--index {
-    /*height: 395px;*/
     padding: 21px 20px 314px 20px;
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
     background-position: bottom left, 0 -67px;
@@ -29,8 +32,15 @@
 
 @media (min-width: $tablet-width) {
   .page-description {
-    height: 331px;
-    padding: 81px 93px 0 93px;
+    padding: 70px 93px 139px 93px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center -111px;
+    background-size: auto;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
 
     &--index {
     height: auto;
@@ -39,8 +49,8 @@
     }
   }
   .page-description__text {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 

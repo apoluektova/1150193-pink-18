@@ -56,7 +56,7 @@
 
 .tools-list__toggle {
   width: 14px;
-  height: 15px;
+  height: 14px;
   background-color: $light-grey;
   border: 2px solid $lipstick;
   border-radius: 50%;
@@ -70,6 +70,7 @@
   .tools-list {
     display: block;
     padding: 0;
+    margin-bottom: 67px;
   }
   .tools-list__range {
     left: auto;
@@ -77,20 +78,39 @@
     position: relative;
     bottom: auto;
     flex-grow: 1;
-    margin-left: 20px;
-  }
-  .tools-list__range--fill,
-  .tools-list__range--contrast {
-    display: block;
+    margin-left: 36px;
+
+    &--fill,
+    &--contrast {
+      display: block;
+    }
   }
   .tools-list__scale {
     width: auto;
   }
+  .tools-list__toggle {
+    &--crop {
+      left: 146px;
+    }
+    &--fill {
+      left: 25px;
+    }
+    &--contrast {
+      left: 96px;
+    }
+  }
   .tools-list__item {
     width: auto;
     margin: 0;
-    padding-right: 18px;
+    padding: 36px 18px 36px 0;
     border-bottom: 1px solid rgba($black, 0.1);
+
+    &:first-of-type {
+      padding-top: 20px;
+    }
+    &:last-of-type {
+      padding-top: 33px;
+    }
   }
   .tools-list__button {
     width: 24px;

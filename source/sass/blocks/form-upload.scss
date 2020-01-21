@@ -33,8 +33,7 @@
   @include oval-button;
   background-color: transparent;
   color: $lipstick;
-  width: 280px;
-  padding: 15px 91px 16px 87px;
+  padding: 15px 89px 16px 87px;
   margin-bottom: 12px;
   margin-left: -2px;
 
@@ -54,7 +53,6 @@
   @include oval-button;
   background-color: transparent;
   color: rgba($dark-grey, 0.1);
-  width: 280px;
   padding: 15px 91px 16px 91px;
 
   &:hover {
@@ -71,29 +69,36 @@
 
 @media (min-width: $tablet-width) {
   .form-upload__text-wrapper {
-    padding-top: 74px;
+    padding-top: 43px;
     padding-bottom: 72px;
   }
   .form-upload__text {
-    padding-right: 102px;
+    font-size: 18px;
+    padding-right: 100px;
     padding-left: 100px;
   }
   .form-upload__image-wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 57px;
+    padding-top: 55px;
     padding-bottom: 54px;
   }
   .form-upload__image {
     margin: 0;
-    width: 280px;
+    width: 605px;
   }
   .form-upload__edit-wrapper {
     flex-grow: 1;
-    margin-left: 40px;
+    margin-left: 63px;
   }
   .form-upload__edit {
     border-bottom: none;
+  }
+  .form-upload__button-submit {
+    padding: 13px 83px 16px 71px;
+  }
+  .form-upload__button-cancel {
+    padding: 13px 83px 16px 71px;
   }
 }
 

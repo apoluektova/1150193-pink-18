@@ -69,6 +69,10 @@
   font-size: 14px;
   text-align: left;
   margin-bottom: 6px;
+
+  &--questions {
+    display: none;
+  }
 }
 
 .user-photos__like {
@@ -88,20 +92,23 @@
 
 @media (min-width: $tablet-width) {
   .user-photos__slogan {
-    padding: 100px 111px 80px 113px;
+    padding: 92px 90px 76px;
   }
-
   .user-photos {
     overflow: hidden;
   }
-
+  .user-photos__text {
+    font-size: 18px;
+  }
   .user-photos__item {
     margin-right: 20px;
     display: flex;
+    min-height: 455px;
 
     &--panorama {
       display: block;
       width: 100%;
+      margin-bottom: 50px;
     }
 
     &:nth-of-type(2n+1) {
@@ -115,7 +122,7 @@
 
   .user-photos__post-wrapper {
     width: 300px;
-    padding: 31px 29px 28px 27px;
+    padding: 22px 29px 25px 27px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -127,6 +134,7 @@
       justify-content: space-between;
       flex-wrap: wrap;
       width: 620px;
+      padding: 22px 29px 18px 27px;
     }
   }
 
@@ -139,11 +147,8 @@
     width: 300px;
 
     &--panorama {
-      width: 100vw;
-      max-width: none;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
+      width: auto;
+      height: 509px;
     }
   }
 
@@ -156,17 +161,23 @@
     margin-top: auto;
     padding-left: 0;
     padding-right: 140px;
+    padding-top: 2px;
 
     &--panorama {
     /*order: 1;*/
     padding-right: 30px;
     padding-left: 0;
-    width: 125px;
+    padding-top: 0;
+    width: 121px;
     }
   }
-
-  .user-photos__description--panorama {
+  .user-photos__description {
+    &--questions {
+    display: inline;
+    }
+    &--panorama {
     order: 1;
+    }
   }
 
   .user-photos__list {
