@@ -44,7 +44,7 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Форма для участия в конкурсе</h1>
-      <div class="page-description">
+      <div class="page-description page-description--form">
         <p class="page-description__text">Конкурс на самое безбашенное путешествие с Пинк</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -115,15 +115,15 @@
             <h2 class="form__header">С каким приложением путешествовали?</h2>
             <div class="form__border-wrapper">
               <ul class="form__list">
-                <li class="form__item">
+                <li class="form__item form__item--app">
                   <input class="form__button form__button--radio" type="radio" name="radio" id="ios" checked>
                   <label class="form__button-label" for="ios">Pink для iOS</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--app">
                   <input class="form__button form__button--radio" type="radio" name="radio" id="android">
                   <label class="form__button-label" for="android">Pink на Android</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--app">
                   <input class="form__button form__button--radio" type="radio" name="radio" id="windows">
                   <label class="form__button-label" for="windows">Windows Phone</label>
                 </li>
@@ -131,13 +131,13 @@
             </div>
           </div>
           <div class="form__comment-block">
-            <h2 class="form__header">Опишите свои эмоции</h2>
+            <h2 class="form__header form__header--comment">Опишите свои эмоции</h2>
             <div class="form__border-wrapper form__border-wrapper--comment">
               <textarea class="form__textarea" id="comment" name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
             <div class="form__submit-wrapper">
               <button class="form__submit" type="submit">Отправить форму</button>
-              <p class="form__asterisk"><span class="form__asterisk-sign">*</span> - обязательные поля</p>
+              <p class="form__asterisk"><span class="form__asterisk-sign">*</span> &mdash; обязательные поля</p>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
+          <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">

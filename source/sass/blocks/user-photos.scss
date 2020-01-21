@@ -190,26 +190,42 @@
 
 @media (min-width: $desktop-width) {
   .user-photos__slogan {
-    padding: 100px 240px 92px 240px;
+    padding: 91px 180px 89px;
   }
   .user-photos__post-wrapper {
-    padding: 31px 32px 29px 28px;
+    padding: 22px 32px 23px 28px;
 
     &--panorama {
       width: 940px;
-      padding: 31px 32px 27px 27px;
+      padding: 22px 32px 17px 27px;
       margin-bottom: 50px;
+    }
+  }
+  .user-photos__item {
+    margin-bottom: 54px;
+    min-height: 555px;
+
+    &--panorama {
+      margin: 0;
+    }
+    &:nth-of-type(2n+1) {
+      margin-right: 20px;
+    }
+    &:nth-of-type(4),
+    &:nth-of-type(7) {
+      margin-right: 0;
+    }
+  }
+  .user-photos__image {
+    width: 300px;
+
+    &--panorama {
+      width: auto;
+      height: 506px;
     }
   }
   .user-photos__list {
     width: 940px;
     margin: 0 auto;
-  }
-  .user-photos__item:nth-of-type(2n+1) {
-    margin-right: 20px;
-  }
-  .user-photos__item:nth-of-type(4),
-  .user-photos__item:nth-of-type(7) {
-    margin-right: 0;
   }
 }

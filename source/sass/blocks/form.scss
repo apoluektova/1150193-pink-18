@@ -1,20 +1,20 @@
-.form__wrapper {
-  @include wrapper;
-}
 .form__text-block {
-  padding: 56px 4px 49px 5px;
+  @include wrapper;
+  padding-top: 46px;
+  padding-bottom: 33px;
 }
 
 .form__fields-block {
+  @include wrapper;
   padding-bottom: 44px;
 
   &--contacts {
-    padding-top: 41px;
+    padding-top: 32px;
   }
 }
 
 .form__inner-wrapper {
-  margin-bottom: 29px;
+  margin-bottom: 18px;
 
   &:last-child {
     margin-bottom: 0;
@@ -27,8 +27,8 @@
   line-height: 30px;
   color: $lipstick;
   text-transform: uppercase;
-  margin-left: 21px;
-  margin-bottom: 16px;
+  margin-left: 22px;
+  margin-bottom: 5px;
   display: block;
 }
 
@@ -58,12 +58,19 @@
 .form__input {
   @include placeholder;
   width: 100%;
-  padding: 22px 20px 18px 20px;
+  padding: 20px 20px 18px 20px;
 }
 
 .form__buttons-block {
   background-color: $light-grey;
-  padding: 41px 0 44px;
+  padding: 39px 20px 47px;
+
+  &--achievements {
+    padding-top: 37px;
+  }
+  &--app {
+    padding-bottom: 46px;
+  }
 }
 
 .form__header {
@@ -73,11 +80,18 @@
   color: $lipstick;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
   display: block;
 
   &--contacts {
     display: none;
+  }
+  &--achievements {
+    padding: 0 20px;
+    margin-bottom: 42px;
+  }
+  &--comment {
+    margin-bottom: 15px;
   }
 }
 
@@ -87,8 +101,11 @@
 }
 
 .form__item {
-  margin-bottom: 47px;
+  margin-bottom: 52px;
 
+  &--app {
+    margin-bottom: 45px;
+  }
   &:last-child {
     margin-bottom: 0;
   }
@@ -99,10 +116,13 @@
   line-height: 30px;
   color: $dark-grey;
   text-align: left;
+  padding-left: 52px;
 }
 
 .form__comment-block {
-  padding: 41px 2px 24px 2px;
+  @include wrapper;
+  padding-top: 39px;
+  padding-bottom: 14px;
 }
 
 .form__comment-label {
@@ -119,10 +139,10 @@
   line-height: 30px;
   text-align: left;
   color: $dark-grey;
-  padding: 23px 28px 23px 19px;
-  margin-bottom: 52px;
-  min-height: 197px;
+  padding: 14px 20px 14px 19px;
+  margin-bottom: 42px;
   width: 100%;
+  min-height: 202px;
 }
 
 .form__submit {
@@ -135,8 +155,8 @@
   line-height: 30px;
   text-transform: uppercase;
   outline: none;
-  padding: 20px 15px 21px 15px;
-  margin-bottom: 46px;
+  padding: 13px 15px 16px 15px;
+  margin-bottom: 35px;
   width: 100%;
 
   &:hover {
