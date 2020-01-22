@@ -54,6 +54,13 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 11px 0 74px;
+    padding: 66px 0 74px;
+
+    &--photo {
+      padding-top: 93px;
+    }
+    &--form {
+      padding-top: 11px;
+    }
   }
 }
