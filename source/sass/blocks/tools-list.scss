@@ -78,7 +78,7 @@
     position: relative;
     bottom: auto;
     flex-grow: 1;
-    margin-left: 36px;
+    margin-left: 28px;
 
     &--fill,
     &--contrast {
@@ -128,5 +128,16 @@
   }
   .tools-list__range {
     margin-left: 44px;
+  }
+  .tools-list__toggle {
+    &--crop {
+      left: 70px;
+    }
+    &--fill {
+      left: 247px;
+    }
+    &--contrast {
+      left: 160px;
+    }
   }
 }

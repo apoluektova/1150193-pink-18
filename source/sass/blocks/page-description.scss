@@ -45,7 +45,9 @@
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 1200px auto;
     }
-
+    &--form {
+      padding-bottom: 79px;
+    }
     &--index {
     height: auto;
     padding: 0 56px 26px 55px;

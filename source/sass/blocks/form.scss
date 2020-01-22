@@ -186,26 +186,34 @@
 
 @media(min-width: $tablet-width) {
   .form {
-    padding: 100px 0 52px;
+    padding: 92px 0 52px;
   }
   .form__wrapper {
+    @include wrapper;
     display: flex;
     flex-direction: column;
   }
   .form__text--hidden {
     display: block;
   }
+  .form__text {
+    font-size: 18px;
+    padding: 0 40px;
+  }
   .form__text-block {
     order: 1;
-    margin-bottom: 76px;
+    margin-bottom: 71px;
     padding: 0;
+  }
+  .form__input {
+    padding-left: 18px;
   }
   .form__fields-block {
     padding: 0;
 
     &--name {
       order: 2;
-      margin-bottom: 70px;
+      margin-bottom: 59px;
     }
 
     &--contacts {
@@ -215,6 +223,7 @@
   }
   .form__inner-wrapper {
     display: flex;
+    margin-bottom: 53px;
 
     &--contacts {
       flex-direction: column;
@@ -222,7 +231,7 @@
   }
   .form__label {
     margin: 0;
-    margin-right: 22px;
+    margin-right: 20px;
     align-self: center;
 
     &--contacts {
@@ -235,6 +244,8 @@
   .form__input--contacts {
     margin-bottom: 21px;
     display: block;
+    padding-top: 18px;
+    padding-left: 17px;
   }
   .form__buttons-block {
     background-color: inherit;
@@ -243,15 +254,19 @@
 
     &--app {
       order: 3;
+      margin-bottom: 57px;
     }
 
     &--achievements {
       order: 5;
     }
   }
+  .form__button-label {
+    padding-left: 40px;
+  }
   .form__border-wrapper {
     border: 2px solid $medium-grey;
-    padding: 54px 60px 50px 60px;
+    padding: 56px 60px 59px 60px;
     border-top: 0;
 
     &--comment {
@@ -261,6 +276,7 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      padding-top: 46px;
     }
   }
   .form__comment-block {
@@ -278,6 +294,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      &::before {
+        content: "";
+        height: 2px;
+        flex-grow: 1;
+        background: $medium-grey;
+        margin-right: 25px;
+      }
+      &::after {
+        content: "";
+        height: 2px;
+        flex-grow: 1;
+        background: $medium-grey;
+        margin-left: 25px;
+      }
     }
   }
   .form__header::before {
@@ -285,14 +316,14 @@
     height: 2px;
     flex-grow: 1;
     background: $medium-grey;
-    margin-right: 10px;
+    margin-right: 32px;
   }
   .form__header::after {
     content: "";
     height: 2px;
     flex-grow: 1;
     background: $medium-grey;
-    margin-left: 10px;
+    margin-left: 31px;
   }
   .form__textarea {
     width: 496px;
