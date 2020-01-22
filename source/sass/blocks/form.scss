@@ -143,6 +143,7 @@
   margin-bottom: 42px;
   width: 100%;
   min-height: 202px;
+  resize: none;
 }
 
 .form__submit {
@@ -186,7 +187,7 @@
 
 @media(min-width: $tablet-width) {
   .form {
-    padding: 92px 0 52px;
+    padding: 92px 0 54px;
   }
   .form__wrapper {
     @include wrapper;
@@ -194,7 +195,7 @@
     flex-direction: column;
   }
   .form__text--hidden {
-    display: block;
+    display: inline;
   }
   .form__text {
     font-size: 18px;
@@ -206,7 +207,14 @@
     padding: 0;
   }
   .form__input {
-    padding-left: 18px;
+    &--contacts {
+      width: 100%;
+      margin-bottom: 11px;
+      display: block;
+      padding-top: 18px;
+      padding-left: 17px;
+      padding-right: 60px;
+    }
   }
   .form__fields-block {
     padding: 0;
@@ -218,7 +226,7 @@
 
     &--contacts {
       order: 4;
-      margin-bottom: 69px;
+      margin-bottom: 55px;
     }
   }
   .form__inner-wrapper {
@@ -227,6 +235,19 @@
 
     &--contacts {
       flex-direction: column;
+      position: relative;
+      margin-bottom: 32px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        background-color: $medium-grey;
+        top: 0;
+        right: 0;
+      }
     }
   }
   .form__label {
@@ -238,14 +259,8 @@
       order: 2;
       align-self: flex-start;
       margin-right: 0;
-      margin-left: 18px;
+      margin-left: 17px;
     }
-  }
-  .form__input--contacts {
-    margin-bottom: 21px;
-    display: block;
-    padding-top: 18px;
-    padding-left: 17px;
   }
   .form__buttons-block {
     background-color: inherit;
@@ -259,6 +274,7 @@
 
     &--achievements {
       order: 5;
+      margin-bottom: 59px;
     }
   }
   .form__button-label {
@@ -270,13 +286,19 @@
     border-top: 0;
 
     &--comment {
-      margin-bottom: 71px;
+      margin-bottom: 67px;
+      padding-top: 45px;
+      padding-bottom: 5px;
     }
     &--contacts {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       padding-top: 46px;
+      padding-bottom: 27px;
+    }
+    &--achievements {
+      padding-bottom: 54px;
     }
   }
   .form__comment-block {
@@ -288,6 +310,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &--achievements {
+      padding: 0;
+    }
 
     &--contacts {
       margin: 0 0 -8px;
@@ -326,9 +352,9 @@
     margin-left: 31px;
   }
   .form__textarea {
-    width: 496px;
-    min-height: 189px;
-    padding: 23px 26px 23px 20px;
+    width: 497px;
+    min-height: 190px;
+    padding: 13px 17px 23px 17px;
   }
   .form__submit-wrapper {
     display: flex;
@@ -337,7 +363,9 @@
   }
   .form__submit {
     margin-bottom: 0;
-    width: 296px;
+    padding: 15px 56px 12px 55px;
+    width: auto;
+    display: block;
   }
   .form__asterisk {
     margin: 0;
@@ -347,7 +375,16 @@
 @media (min-width: $desktop-width) {
   .form {
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 92px;
+  }
+  .form__text-block {
+    margin-bottom: 74px;
+  }
+  .form__text {
+    padding: 0 70px;
+  }
+  .form__text--hidden {
+    padding: 0;
   }
   .form__wrapper {
     display: flex;
