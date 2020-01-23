@@ -1,20 +1,20 @@
-.form__wrapper {
-  @include wrapper;
-}
 .form__text-block {
-  padding: 56px 4px 49px 5px;
+  @include wrapper;
+  padding-top: 46px;
+  padding-bottom: 33px;
 }
 
 .form__fields-block {
+  @include wrapper;
   padding-bottom: 44px;
 
   &--contacts {
-    padding-top: 41px;
+    padding-top: 32px;
   }
 }
 
 .form__inner-wrapper {
-  margin-bottom: 29px;
+  margin-bottom: 18px;
 
   &:last-child {
     margin-bottom: 0;
@@ -27,8 +27,8 @@
   line-height: 30px;
   color: $lipstick;
   text-transform: uppercase;
-  margin-left: 21px;
-  margin-bottom: 16px;
+  margin-left: 22px;
+  margin-bottom: 5px;
   display: block;
 }
 
@@ -58,12 +58,19 @@
 .form__input {
   @include placeholder;
   width: 100%;
-  padding: 22px 20px 18px 20px;
+  padding: 20px 20px 18px 20px;
 }
 
 .form__buttons-block {
   background-color: $light-grey;
-  padding: 41px 0 44px;
+  padding: 39px 20px 47px;
+
+  &--achievements {
+    padding-top: 37px;
+  }
+  &--app {
+    padding-bottom: 46px;
+  }
 }
 
 .form__header {
@@ -73,11 +80,18 @@
   color: $lipstick;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
   display: block;
 
   &--contacts {
     display: none;
+  }
+  &--achievements {
+    padding: 0 20px;
+    margin-bottom: 42px;
+  }
+  &--comment {
+    margin-bottom: 15px;
   }
 }
 
@@ -87,8 +101,11 @@
 }
 
 .form__item {
-  margin-bottom: 47px;
+  margin-bottom: 52px;
 
+  &--app {
+    margin-bottom: 45px;
+  }
   &:last-child {
     margin-bottom: 0;
   }
@@ -99,10 +116,13 @@
   line-height: 30px;
   color: $dark-grey;
   text-align: left;
+  padding-left: 52px;
 }
 
 .form__comment-block {
-  padding: 41px 2px 24px 2px;
+  @include wrapper;
+  padding-top: 39px;
+  padding-bottom: 14px;
 }
 
 .form__comment-label {
@@ -119,10 +139,11 @@
   line-height: 30px;
   text-align: left;
   color: $dark-grey;
-  padding: 23px 28px 23px 19px;
-  margin-bottom: 52px;
-  min-height: 197px;
+  padding: 14px 20px 14px 19px;
+  margin-bottom: 42px;
   width: 100%;
+  min-height: 202px;
+  resize: none;
 }
 
 .form__submit {
@@ -135,8 +156,8 @@
   line-height: 30px;
   text-transform: uppercase;
   outline: none;
-  padding: 20px 15px 21px 15px;
-  margin-bottom: 46px;
+  padding: 13px 15px 16px 15px;
+  margin-bottom: 35px;
   width: 100%;
 
   &:hover {
@@ -157,6 +178,10 @@
   @include page-text;
   text-transform: uppercase;
   margin: 0;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .form__asterisk-sign {
@@ -166,55 +191,80 @@
 
 @media(min-width: $tablet-width) {
   .form {
-    padding: 100px 0 52px;
+    padding: 92px 0 54px;
   }
   .form__wrapper {
+    @include wrapper;
     display: flex;
     flex-direction: column;
   }
   .form__text--hidden {
-    display: block;
+    display: inline;
+  }
+  .form__text {
+    font-size: 18px;
+    padding: 0 40px;
   }
   .form__text-block {
     order: 1;
-    margin-bottom: 76px;
+    margin-bottom: 71px;
     padding: 0;
+  }
+  .form__input {
+    &--contacts {
+      width: 100%;
+      margin-bottom: 11px;
+      display: block;
+      padding-top: 18px;
+      padding-left: 17px;
+      padding-right: 60px;
+    }
   }
   .form__fields-block {
     padding: 0;
 
     &--name {
       order: 2;
-      margin-bottom: 70px;
+      margin-bottom: 59px;
     }
 
     &--contacts {
       order: 4;
-      margin-bottom: 69px;
+      margin-bottom: 55px;
     }
   }
   .form__inner-wrapper {
     display: flex;
+    margin-bottom: 53px;
 
     &--contacts {
       flex-direction: column;
+      position: relative;
+      margin-bottom: 32px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        background-color: $medium-grey;
+        top: 0;
+        right: 0;
+      }
     }
   }
   .form__label {
     margin: 0;
-    margin-right: 22px;
+    margin-right: 20px;
     align-self: center;
 
     &--contacts {
       order: 2;
       align-self: flex-start;
       margin-right: 0;
-      margin-left: 18px;
+      margin-left: 17px;
     }
-  }
-  .form__input--contacts {
-    margin-bottom: 21px;
-    display: block;
   }
   .form__buttons-block {
     background-color: inherit;
@@ -223,24 +273,37 @@
 
     &--app {
       order: 3;
+      margin-bottom: 57px;
     }
 
     &--achievements {
       order: 5;
+      margin-bottom: 59px;
     }
+  }
+  .form__button-label {
+    padding-left: 40px;
   }
   .form__border-wrapper {
     border: 2px solid $medium-grey;
-    padding: 54px 60px 50px 60px;
+    padding: 56px 60px 59px 60px;
     border-top: 0;
 
     &--comment {
-      margin-bottom: 71px;
+      margin-bottom: 67px;
+      padding-top: 45px;
+      padding-bottom: 5px;
     }
     &--contacts {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      padding-top: 46px;
+      padding-bottom: 27px;
+    }
+    &--achievements {
+      padding-bottom: 54px;
+      width: 100%;
     }
   }
   .form__comment-block {
@@ -253,11 +316,30 @@
     justify-content: center;
     align-items: center;
 
+    &--achievements {
+      padding: 0;
+    }
+
     &--contacts {
       margin: 0 0 -8px;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      &::before {
+        content: "";
+        height: 2px;
+        flex-grow: 1;
+        background: $medium-grey;
+        margin-right: 25px;
+      }
+      &::after {
+        content: "";
+        height: 2px;
+        flex-grow: 1;
+        background: $medium-grey;
+        margin-left: 25px;
+      }
     }
   }
   .form__header::before {
@@ -265,19 +347,19 @@
     height: 2px;
     flex-grow: 1;
     background: $medium-grey;
-    margin-right: 10px;
+    margin-right: 32px;
   }
   .form__header::after {
     content: "";
     height: 2px;
     flex-grow: 1;
     background: $medium-grey;
-    margin-left: 10px;
+    margin-left: 31px;
   }
   .form__textarea {
-    width: 496px;
-    min-height: 189px;
-    padding: 23px 26px 23px 20px;
+    width: 497px;
+    min-height: 190px;
+    padding: 13px 17px 23px 17px;
   }
   .form__submit-wrapper {
     display: flex;
@@ -286,7 +368,9 @@
   }
   .form__submit {
     margin-bottom: 0;
-    width: 296px;
+    padding: 15px 56px 12px 55px;
+    width: auto;
+    display: block;
   }
   .form__asterisk {
     margin: 0;
@@ -296,17 +380,45 @@
 @media (min-width: $desktop-width) {
   .form {
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 92px;
+  }
+  .form__button--checkbox {
+    display: none;
+  }
+  .form__text-block {
+    margin-bottom: 90px;
+  }
+  .form__text {
+    padding: 0 70px;
+  }
+  .form__text--hidden {
+    padding: 0;
   }
   .form__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
-  .form__border-wrapper--contacts {
-    flex-direction: row;
+  .form__border-wrapper{
+    &--contacts {
+      flex-direction: row;
+      padding-top: 44px;
+      padding-bottom: 14px;
+    }
+    &--app {
+      padding-top: 57px;
+    }
+    &--achievements {
+      width: 100%;
+      padding: 56px 58px 9px 60px;
+    }
+    &--comment {
+      padding-top: 41px;
+      padding-bottom: 42px;
+      margin-bottom: 64px;
+    }
   }
+
   .form__inner-wrapper--contacts {
     margin-bottom: 0;
     flex-grow: 1;
@@ -319,22 +431,30 @@
   .form__text-block {
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 64px;
+    margin-bottom: 85px;
   }
   .form__fields-block--name {
-    width: 433px;
+    width: 435px;
     padding: 0;
+    margin-right: 71px;
+  }
+  .form__button-label {
+    padding-left: 55px;
+
+    &--achievements {
+      padding-left: 0;
+    }
   }
   .form__buttons-block--app {
-    width: 431px;
+    width: 434px;
     padding: 0;
+    margin-top: -14px;
   }
   .form__fields-block--contacts {
     width: 100%;
     padding: 0;
   }
   .form__buttons-block--achievements {
-    width: 100%;
     padding: 0;
   }
   .form__comment-block {
@@ -342,19 +462,61 @@
     padding: 0;
   }
   .form__list--achievements {
-    /*;display: flex;
-    flex-direction: column;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    height: 200px;*/
-    column-count: 3;
+  }
+  .form__item {
+    margin-top: 0;
+    width: auto;
+
+    &--achievements {
+      padding-left: 58px;
+      margin-right: auto;
+    }
+
+    &:nth-child(5),
+    &:nth-child(6) {
+      margin-right: 0;
+    }
+
+    &:nth-child(odd) {
+      order: 1;
+    }
+
+    &:nth-child(even) {
+      order: 2;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: 315px;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      width: 295px;
+    }
+
+    &:nth-child(5),
+    &:nth-child(6) {
+      width: 208px;
+    }
   }
   .form__textarea {
     width: 100%;
-    height: 124px;
-    padding: 23px 20px;
+    min-height: 124px;
+    padding: 12px 20px 13px 17px;
+    margin-bottom: 0;
   }
   .form__input--contacts {
     width: 100%;
+  }
+  .form__asterisk--hidden {
+    display: inline;
+  }
+  .form__submit {
+    padding-bottom: 14px;
   }
 }

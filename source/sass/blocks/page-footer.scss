@@ -19,7 +19,7 @@
 
 .page-footer__social {
   margin: 0 auto;
-  margin-bottom: 41px;
+  margin-bottom: 27px;
 }
 
 .page-footer__copyright {
@@ -28,7 +28,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding: 36px 0 39px;
+    padding: 31px 0 35px;
 
     &--index {
       display: block;
@@ -54,6 +54,13 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 98px 0 74px;
+    padding: 66px 0 74px;
+
+    &--photo {
+      padding-top: 93px;
+    }
+    &--form {
+      padding-top: 11px;
+    }
   }
 }

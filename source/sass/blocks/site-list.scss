@@ -1,21 +1,18 @@
 .site-list {
   @include no-list;
+  border-top: 1px solid $black;
 }
 
-.site-list__item {
+.site-list__link {
+  display: block;
   font-size: inherit;
   font-weight: 700;
   line-height: 32px;
   text-transform: uppercase;
   color: $white;
-  box-shadow: 0px 1px 0 0 $black, inset 0px 1px 0 0 rgba($black, 0.15);
-  padding: 26px 23px 25px 19px;
-}
-
-.site-list__link {
-  color: $white;
-  display: block;
-  height: 100%;
+  border-top: 1px solid rgba($white, 0.15);
+  border-bottom: 1px solid $black;
+  padding: 14px 20px 16px 20px;
 
   &:hover {
     color: $lipstick;
@@ -25,9 +22,9 @@
     color: rgba($lipstick, 0.3);
   }
 
-  &--active,
-  &--active:hover,
-  &--active:active {
+  &--active .site-list__link,
+  &--active .site-list__link:hover,
+  &--active .site-list__link:active {
     color: $white;
   }
 }
@@ -37,17 +34,20 @@
     display: flex;
     width: auto;
     justify-content: flex-end;
+    border: none;
+    flex-wrap: wrap;
   }
-  .site-list__item {
-    box-shadow: none;
+
+  .site-list__link {
+    border: none;
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
-    padding: 0;
-    margin-left: 83px;
+    padding: 11px 0;
+    margin-left: 80px;
 
-    &--first-of-type {
-      margin-left: 0;
+    &--active {
+      box-shadow: 0 2px 0 0 $white;
     }
   }
 }

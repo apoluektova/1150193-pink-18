@@ -12,8 +12,8 @@
         <div class="page-header__container">
           <a class="page-header__link" href="index.html">
             <picture>
-              <source media="(min-width:660px)" srcset="img/svg/logo-pink-white-tablet.svg">
               <source media="(min-width:960px)" srcset="img/svg/logo-pink-white-desktop.svg">
+              <source media="(min-width:660px)" srcset="img/svg/logo-pink-white-tablet.svg">
               <img class="page-header__logo-image" src="img/svg/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип приложения Пинк." >
             </picture>
           </a>
@@ -44,14 +44,13 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Форма для участия в конкурсе</h1>
-      <div class="page-description">
-        <p class="page-description__text">Конкурс на самое безбашенное путешествие с Пинк</p>
+      <div class="page-description page-description--form">
+        <p class="page-description__text page-description__text--inner">Конкурс на самое безбашенное путешествие с Пинк</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__wrapper">
           <div class="form__text-block">
-            <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-            <p class="form__text form__text--hidden">Пожалуйста, заполните форму ниже:</p>
+            <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__text form__text--hidden">Пожалуйста, заполните форму ниже:</span></p>
           </div>
           <div class="form__fields-block form__fields-block--name">
             <div class="form__inner-wrapper">
@@ -69,31 +68,31 @@
           </div>
           <div class="form__buttons-block form__buttons-block--achievements">
             <h2 class="form__header form__header--achievements">Ваши безбашенные достижения в путешествии</h2>
-            <div class="form__border-wrapper">
+            <div class="form__border-wrapper form__border-wrapper--achievements">
               <ul class="form__list form__list--achievements">
-                <li class="form__item">
+                <li class="form__item form__item--achievements">
                   <input class="form__button form__button--checkbox" type="checkbox" name="shark" id="shark" checked>
-                  <label class="form__button-label" for="shark">Сделал селфи с акулой</label>
+                  <label class="form__button-label form__button-label--achievements" for="shark">Сделал селфи с акулой</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--achievements">
                   <input class="form__button form__button--checkbox" type="checkbox" name="beach" id="beach" checked>
-                  <label class="form__button-label" for="beach">Обгорел на пляже</label>
+                  <label class="form__button-label form__button-label--achievements" for="beach">Обгорел на пляже</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--achievements">
                   <input class="form__button form__button--checkbox" type="checkbox" name="chuck" id="chuck">
-                  <label class="form__button-label" for="chuck">Видел Чака Норриса</label>
+                  <label class="form__button-label form__button-label--achievements" for="chuck">Видел Чака Норриса</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--achievements">
                   <input class="form__button form__button--checkbox" type="checkbox" name="gifts" id="gifts">
-                  <label class="form__button-label" for="gifts">Накупил сувениров</label>
+                  <label class="form__button-label form__button-label--achievements" for="gifts">Накупил сувениров</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--achievements">
                   <input class="form__button form__button--checkbox" type="checkbox" name="tower" id="tower" checked>
-                  <label class="form__button-label" for="tower">Удержал башню</label>
+                  <label class="form__button-label form__button-label--achievements" for="tower">Удержал башню</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--achievements">
                   <input class="form__button form__button--checkbox" type="checkbox" name="hotel" id="hotel">
-                  <label class="form__button-label" for="hotel">Разгромил отель</label>
+                  <label class="form__button-label form__button-label--achievements" for="hotel">Разгромил отель</label>
                 </li>
               </ul>
             </div>
@@ -113,17 +112,17 @@
           </div>
           <div class="form__buttons-block form__buttons-block--app">
             <h2 class="form__header">С каким приложением путешествовали?</h2>
-            <div class="form__border-wrapper">
+            <div class="form__border-wrapper form__border-wrapper--app">
               <ul class="form__list">
-                <li class="form__item">
+                <li class="form__item form__item--app">
                   <input class="form__button form__button--radio" type="radio" name="radio" id="ios" checked>
                   <label class="form__button-label" for="ios">Pink для iOS</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--app">
                   <input class="form__button form__button--radio" type="radio" name="radio" id="android">
                   <label class="form__button-label" for="android">Pink на Android</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--app">
                   <input class="form__button form__button--radio" type="radio" name="radio" id="windows">
                   <label class="form__button-label" for="windows">Windows Phone</label>
                 </li>
@@ -131,23 +130,26 @@
             </div>
           </div>
           <div class="form__comment-block">
-            <h2 class="form__header">Опишите свои эмоции</h2>
+            <h2 class="form__header form__header--comment">Опишите свои эмоции</h2>
             <div class="form__border-wrapper form__border-wrapper--comment">
               <textarea class="form__textarea" id="comment" name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
             <div class="form__submit-wrapper">
               <button class="form__submit" type="submit">Отправить форму</button>
-              <p class="form__asterisk"><span class="form__asterisk-sign">*</span> - обязательные поля</p>
+              <p class="form__asterisk"><span class="form__asterisk-sign">*</span> &mdash; обязательные <span class="form__asterisk--hidden">для заполнения</span> поля</p>
             </div>
           </div>
         </div>
       </form>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
       <div class="page-footer__wrapper">
         <a class="page-footer__link" href="index.html">
-            <img class="page-footer__image" src="https://via.placeholder.com/147x40" width="147" height="40" alt=" Логотип приложения Пинк.">
+          <picture>
+            <source media="(min-width:960px)" srcset="img/svg/logo-pink-blue-desktop.svg">
+            <img class="page-footer__image" src="img/svg/logo-pink-blue-mobile.svg" width="147" height="40" alt=" Логотип приложения Пинк.">
+          </picture>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -172,7 +174,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
+          <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">

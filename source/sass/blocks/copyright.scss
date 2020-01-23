@@ -17,15 +17,28 @@
 .copyright__logo {
   fill: $lipstick;
   margin-left: 15px;
+  height: auto;
 }
 
 .copyright__link {
   display: block;
+  padding-top: 2px;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 33.333333%;
     justify-content: flex-end;
+    padding-top: 10px;
+  }
+  .copyright__link {
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+    line-height: 18px;
   }
 }

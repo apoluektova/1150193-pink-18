@@ -1,3 +1,10 @@
+.slider__toggles {
+  width: 62px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .slider__toggle {
   padding: 0;
   border: none;
@@ -6,10 +13,24 @@
   background-color: rgba($dark-grey, 0.3);
   border-radius: 50%;
   cursor: pointer;
+  margin-right: 17px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
-/*
+
 .slider__toggle--active {
-  border: 3px solid $dark-grey;
+  width: 12px;
+  height: 12px;
   background-color: $white;
-} */
+  border: 3px solid $dark-grey;
+  opacity: 1;
+}
+
+ @media (min-width: $desktop-width) {
+   .slider__toggles {
+     display: none;
+   }
+ }

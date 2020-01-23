@@ -1,11 +1,28 @@
 .page-description {
-  width: auto;
-  background-color: $dark-grey;
-  height: 174px;
-  padding: 36px 20px 0 20px;
+  background-color: transparent;
+  padding: 29px 20px 81px 20px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center -67px;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
+  &--form {
+    padding: 29px 20px 51px;
+  }
+
   &--index {
-    height: 399px;
-    padding: 28px 20px 0 20px;
+    padding: 21px 20px 314px 20px;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: bottom left, 0 -67px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+      background-size: 258px auto, 320px auto;
+    }
   }
 }
 
@@ -13,37 +30,58 @@
   margin: 0 auto;
   font-size: 24px;
   font-weight: 300;
-  line-height: normal;
+  line-height: 30px;
   color: $white;
 }
 
 @media (min-width: $tablet-width) {
   .page-description {
-    height: 331px;
-    padding: 81px 93px 0 93px;
+    padding: 70px 93px 139px 93px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center -111px;
+    background-size: auto;
 
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+    &--form {
+      padding-bottom: 79px;
+    }
     &--index {
     height: auto;
-    padding: 0 56px 39px 58px;
+    padding: 0 56px 26px 55px;
+    background-image: none;
     }
   }
   .page-description__text {
     font-size: 40px;
-    line-height: normal;
+    line-height: 50px;
+
+    &--inner {
+      font-size: 50px;
+      line-height: 60px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-description {
-    padding: 73px 229px 100px 232px;
-    height: auto;
+    padding: 174px 280px 100px 280px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center top;
+    background-size: auto;
 
     &--index {
-      padding: 0 33px 61px 36px;
+      padding: 0 33px 55px 32px;
+      background: none;
+    }
+    &--form {
+      padding: 174px 180px 100px 180px;
     }
   }
   .page-description__text {
     font-size: 50px;
-    line-height: normal;
+    line-height: 60px;
   }
 }
