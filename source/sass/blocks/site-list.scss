@@ -14,17 +14,15 @@
   border-bottom: 1px solid $black;
   padding: 14px 20px 16px 20px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $lipstick;
   }
 
   &:active {
     color: rgba($lipstick, 0.3);
   }
-
-  &--active .site-list__link,
-  &--active .site-list__link:hover,
-  &--active .site-list__link:active {
+  &:not([href]) {
     color: $white;
   }
 }

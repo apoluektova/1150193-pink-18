@@ -9,8 +9,16 @@
 }
 
 .main-nav__toggle {
-  width: 24px;
-  height: 23px;
+  @include header-events;
+  @include no-button;
+  color: $white;
+
+  &--close {
+    margin-top: 20px;
+  }
+  &--burger {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -12,14 +12,36 @@
   background-color: $dark-grey;
 }
 
+.page-header__link {
+  cursor: pointer;
+  @include header-events;
+  color: $white;
+}
+
+.page-header__logo {
+  &--mobile {
+    display: block;
+  }
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header__container {
     padding-top: 27px;
     padding-bottom: 37px;
   }
-  .page-header__logo-image {
-    width: 147px;
-    height: 40px;
+  .page-header__logo {
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 }
 
@@ -46,5 +68,16 @@
     max-width: 220px;
     margin: 0;
     background-color: transparent;
+  }
+
+  .page-header__logo {
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }

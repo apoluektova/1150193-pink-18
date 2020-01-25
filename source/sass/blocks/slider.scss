@@ -30,7 +30,60 @@
 }
 
  @media (min-width: $desktop-width) {
-   .slider__toggles {
+   .slider__toggle--active {
      display: none;
    }
+   .slider__toggle--left,
+   .slider__toggle--right {
+     display: block;
+   }
+
+   .slider__toggle--left {
+     position: absolute;
+     top: 213px;
+     left: 130px;
+     width: 22px;
+     height: 41px;
+     padding: 0;
+     border-radius: 0;
+     background-repeat: no-repeat;
+     background-color: transparent;
+     border: none;
+     opacity: 0.3;
+     cursor: pointer;
+     background-image: url("../img/svg/icon-review-arrow-left.svg");
+
+     &:hover,
+     &:focus {
+      opacity: 0.6;
+      }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+  .slider__toggle--right {
+    position: absolute;
+    top: 213px;
+    right: 130px;
+    width: 22px;
+    height: 41px;
+    padding: 0;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    opacity: 0.3;
+    cursor: pointer;
+    background-image: url("../img/svg/icon-review-arrow-right.svg");
+
+    &:hover,
+    &:focus {
+     opacity: 0.6;
+     }
+
+   &:active {
+     opacity: 0.1;
+   }
+ }
  }

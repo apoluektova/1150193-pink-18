@@ -84,3 +84,25 @@
     padding: 0 10px;
   }
 }
+
+@mixin header-events {
+  &:hover {
+    color: $lipstick;
+  }
+
+  &:active {
+    color: $white;
+    opacity: 0.3;
+  }
+}
+
+@mixin footer-events {
+  &:hover {
+    color: $lipstick;
+  }
+
+  &:active {
+    color: $dark-grey;
+    opacity: 0.3;
+  }
+}

@@ -21,6 +21,35 @@
 
 .user-photos__item {
   margin-bottom: 19px;
+  position: relative;
+
+  &--panorama {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 140px;
+      height: 36px;
+      background-color: $lipstick;
+      z-index: 1;
+    }
+    &::after {
+      content: "Панорама дня";
+      position: absolute;
+      top: 6px;
+      right: 20px;
+      width: 102px;
+      height: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: $white;
+      z-index: 2;
+    }
+  }
+
 }
 
 .user-photos__post-wrapper {
@@ -80,6 +109,18 @@
   display: block;
   padding-left: 32px;
   margin-top: auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 12px;
+    top: 8px;
+    left: 0;
+    background-image: url("../img/svg/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .user-photos__like-text,
@@ -109,7 +150,14 @@
       display: block;
       width: 100%;
       margin-bottom: 50px;
-    }
+
+        &::before {
+          top: 57px;
+        }
+        &::after {
+          top: 63px;
+        }
+      }
 
     &:nth-of-type(2n+1) {
       margin-right: 0;
@@ -163,12 +211,27 @@
     padding-right: 140px;
     padding-top: 2px;
 
+    &::before {
+      top: 8px;
+      left: 227px;
+    }
+
     &--panorama {
-    /*order: 1;*/
-    padding-right: 30px;
-    padding-left: 0;
-    padding-top: 0;
-    width: 121px;
+      padding-right: 30px;
+      padding-left: 0;
+      padding-top: 0;
+      width: 121px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 13px;
+        height: 12px;
+        top: 8px;
+        left: 105px;
+        background-image: url("../img/svg/icon-heart.svg");
+        background-repeat: no-repeat;
+      }
     }
   }
   .user-photos__description {
@@ -207,6 +270,15 @@
 
     &--panorama {
       margin: 0;
+
+      &::before {
+        top: 54px;
+        right: 0;
+      }
+      &::after {
+        top: 59px;
+        right: 20px;
+      }
     }
     &:nth-of-type(2n+1) {
       margin-right: 20px;

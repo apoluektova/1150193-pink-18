@@ -70,6 +70,7 @@
   .reviews {
     padding-top: 180px;
     padding-bottom: 0;
+    position: relative;
   }
   .reviews__wrapper {
     @include wrapper;
@@ -78,6 +79,16 @@
     margin-bottom: 37px;
     font-size: 18px;
     padding: 0 120px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 58px;
+      left: 563px;
+      width: 79px;
+      height: 64px;
+      background-image: url("../img/svg/icon-quotes.svg");
+    }
   }
   .reviews__author {
     font-size: 24px;

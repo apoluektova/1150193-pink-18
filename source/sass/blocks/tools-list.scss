@@ -2,10 +2,10 @@
   @include no-list;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  width: 100%;
   margin-bottom: 32px;
   position: relative;
-  padding-bottom: 40px;
+  padding: 0 44px 40px 38px;
 }
 
 .tools-list__item {
@@ -23,17 +23,34 @@
   height: 100%;
   display: flex;
   align-items: center;
+  color: rgba($dark-grey, 0.3);
+
+  &--active {
+    color: $lipstick;
+  }
 
   &--crop {
-    fill: $lipstick;
+    width: 44px;
+    height: 44px;
   }
 
   &--fill {
-    fill: rgba($dark-grey, 0.3);
-  }
+    width: 48px;
+    height: 43px;
 
+    &:hover,
+    &:focus {
+      color: rgba($dark-grey, 0.5);
+    }
+  }
   &--contrast {
-    fill: rgba($dark-grey, 0.3);
+    width: 32px;
+    height: 32px;
+
+    &:hover,
+    &:focus {
+      color: rgba($dark-grey, 0.5);
+    }
   }
 }
 
@@ -64,6 +81,10 @@
   position: absolute;
   top: -7px;
   left: 193px;
+
+  &:active {
+    background-color: $lipstick;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -113,8 +134,28 @@
     }
   }
   .tools-list__button {
+    color: $lipstick;
     width: 24px;
-    height: 24px;
+
+    &:hover,
+    &:focus {
+      color: $lipstick;
+    }
+  }
+
+  .tools-list__icon {
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
   }
 }
 
@@ -125,6 +166,7 @@
   }
   .tools-list__button {
     width: 48px;
+    display: block;
   }
   .tools-list__range {
     margin-left: 44px;
@@ -138,6 +180,20 @@
     }
     &--contrast {
       left: 160px;
+    }
+  }
+  .tools-list__icon {
+    &--crop {
+      width: 44px;
+      height: 44px;
+    }
+    &--fill {
+      width: 48px;
+      height: 43px;
+    }
+    &--contrast {
+      width: 32px;
+      height: 32px;
     }
   }
 }

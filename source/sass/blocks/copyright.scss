@@ -9,20 +9,27 @@
 .copyright__text {
   font-size: 14px;
   line-height: 18px;
-  text-align: left;
+  text-align: center;
   color: $dark-grey;
   margin: 0;
 }
 
 .copyright__logo {
-  fill: $lipstick;
-  margin-left: 15px;
-  height: auto;
+  margin-left: 8px;
 }
 
 .copyright__link {
   display: block;
-  padding-top: 2px;
+  padding-top: 5px;
+  color: $lipstick;
+
+    &:hover,
+    &:focus {
+      color: $dark-grey;
+    }
+    &:active {
+      color: rgba($dark-grey, 0.3);
+    }
 }
 
 @media (min-width: $tablet-width) {

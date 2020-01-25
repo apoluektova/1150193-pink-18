@@ -68,6 +68,7 @@
   padding: 13px 15px 14px 20px;
   width: 33.333333%;
   margin-left: -100%;
+  position: relative;
 
   &--first {
     display: none;
@@ -77,6 +78,21 @@
   }
   &:last-child {
     padding-top: 15px;
+  }
+
+  &--yes {
+    position: absolute;
+    top: 19px;
+    right: 16px;
+    width: 31px;
+    height: 21px;
+  }
+  &--no {
+    position: absolute;
+    top: 15px;
+    right: 19px;
+    width: 27px;
+    height: 26px;
   }
 }
 
@@ -104,6 +120,16 @@
       display: table-cell;
       border: 2px solid $light-grey;
       background-color: $light-grey;
+    }
+
+    &--yes {
+      top: 12px;
+      right: 60px;
+    }
+
+    &--no {
+      top: 9px;
+      right: 63px;
     }
 
     &--standard::before {
@@ -154,6 +180,16 @@
   .table__cell {
     font-size: 18px;
     padding: 12px 15px 16px 19px;
+
+    &--yes {
+      top: 20px;
+      right: 102px;
+    }
+
+    &--no {
+      top: 17px;
+      right: 103px;
+    }
   }
   .table__header-cell {
     padding-bottom: 22px;
