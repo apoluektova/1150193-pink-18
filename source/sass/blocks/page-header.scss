@@ -1,15 +1,29 @@
 .page-header {
-  margin: 0 auto;
-  box-shadow: 0px 1px 0 0 $black;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+
+  &--opened {
+    margin-bottom: -67px;
+    position: relative;
+  }
+  &--opened-js {
+    margin-bottom: -67px;
+    position: absolute;
+  }
 }
 
 .page-header__container {
   @include wrapper;
   display: flex;
-  padding-top: 22px;
+  padding-top: 19px;
   padding-bottom: 25px;
   justify-content: space-between;
   background-color: $dark-grey;
+
+  &--closed {
+    background-color: rgba($black, 0.3);
+  }
 }
 
 .page-header__link {

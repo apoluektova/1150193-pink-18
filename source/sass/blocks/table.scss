@@ -193,5 +193,12 @@
   }
   .table__header-cell {
     padding-bottom: 22px;
+
+    &--standard::before {
+      left: 0;
+    }
+    &--standard::after {
+      left: 9px;
+    }
   }
 }

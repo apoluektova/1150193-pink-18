@@ -12,7 +12,8 @@
   margin-bottom: 32px;
 
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $white;
     color: $lipstick;
   }
