@@ -8,7 +8,6 @@
 }
 
 .social__item {
-  margin-right: 17px;
   position: relative;
   background-color: $white;
   border: 3px solid rgba($dark-grey, 0.1);
@@ -16,6 +15,7 @@
   cursor: pointer;
   width: 46px;
   height: 46px;
+  margin-right: 17px;
 
   &:hover,
   &:focus {
@@ -26,10 +26,18 @@
     border-color: rgba($dark-grey, 0.3);
     opacity: 0.3;
   }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
-.social__item:last-of-type {
-  margin-right: 0;
+.social__link {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social__logo {

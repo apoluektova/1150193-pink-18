@@ -41,12 +41,16 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding: 31px 0 35px;
+    padding: 27px 0 35px;
 
     &--index {
       display: block;
     }
   }
+  .page-footer__logo--mobiletablet {
+    margin: 0;
+  }
+
   .page-footer__wrapper {
     @include wrapper;
     display: flex;
@@ -67,7 +71,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 66px 0 74px;
+    padding: 60px 0 74px;
 
     &--photo {
       padding-top: 93px;

@@ -83,8 +83,9 @@
     &::before {
       content: "";
       position: absolute;
-      top: 58px;
-      left: 563px;
+      top: 65px;
+      left: 50%;
+      transform: translateX(-50%);
       width: 79px;
       height: 64px;
       background-image: url("../img/svg/icon-quotes.svg");

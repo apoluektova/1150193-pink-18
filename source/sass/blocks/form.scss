@@ -2,6 +2,7 @@
   @include wrapper;
   padding-top: 46px;
   padding-bottom: 33px;
+  position: relative;
 }
 
 .form__fields-block {
@@ -539,6 +540,7 @@
     }
     &--app {
       padding-top: 57px;
+      padding-left: 75px
     }
     &--achievements {
       width: 100%;
@@ -573,7 +575,7 @@
     margin-right: 71px;
   }
   .form__button-label {
-    padding-left: 55px;
+    padding-left: 57px;
 
     &--achievements {
       padding-left: 58px;

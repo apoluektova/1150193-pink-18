@@ -139,6 +139,9 @@
         <path fill="currentColor" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
       </symbol>
     </svg>
+
+    <!--Для переключения состояний меню и изменения внешнего вида кнопки прописаны классы main-nav--opened и main-nav--nojs-->
+
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__container">
@@ -147,6 +150,8 @@
             <svg class="page-header__logo page-header__logo--tablet" width="147" height="40"><use xlink:href="#logo-pink-white-tablet"></use></svg>
             <svg class="page-header__logo page-header__logo--desktop" width="147" height="40"><use xlink:href="#logo-pink-white-desktop"></use></svg>
           </a>
+        </div>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню">
             <svg class="main-nav__toggle--close" width="24" height="23" aria-hidden="true">
               <use xlink:href="#menu-close"></use>
@@ -155,8 +160,6 @@
               <use xlink:href="#menu-burger"></use>
             </svg>
           </button>
-        </div>
-        <nav class="main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -387,7 +390,7 @@
             </li>
           </ul>
         </div>
-        <div class="map contacts__map">
+        <div id="map" class="map contacts__map">
           <h2 class="visually-hidden">Карта</h2>
         </div>
       </section>
@@ -438,6 +441,11 @@
         </div>
       </div>
     </footer>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b3e9e8f9-013a-4c2f-8e07-ec3b102c777e&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
+  <script src="picturefill.js"></script>
+  <!--<script src="js/script.js"></script>-->
 
   </body>
 </html>

@@ -88,15 +88,15 @@
     margin: 0;
   }
   .features__list {
-    padding: 99px 20px 45px 330px;
+    padding: 99px 20px 42px 330px;
 
     &::after {
       content: "";
       width: 268px;
-      height: 547px;
+      height: 481px;
       position: absolute;
       margin-right: 0;
-      top: 28px;
+      bottom: 0;
       left: 155px;
 
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
