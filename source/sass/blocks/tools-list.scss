@@ -38,17 +38,18 @@
     width: 48px;
     height: 43px;
 
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       color: rgba($dark-grey, 0.5);
     }
   }
+
   &--contrast {
     width: 32px;
     height: 32px;
 
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       color: rgba($dark-grey, 0.5);
     }
   }
@@ -60,8 +61,8 @@
   right: 20px;
   bottom: 0;
 
-  &--fill,
-  &--contrast {
+  &--contrast,
+  &--fill {
     display: none;
   }
 }
@@ -93,6 +94,7 @@
     padding: 0;
     margin-bottom: 67px;
   }
+
   .tools-list__range {
     left: auto;
     right: auto;
@@ -101,25 +103,30 @@
     flex-grow: 1;
     margin-left: 28px;
 
-    &--fill,
-    &--contrast {
+    &--contrast,
+    &--fill {
       display: block;
     }
   }
+
   .tools-list__scale {
     width: auto;
   }
+
   .tools-list__toggle {
     &--crop {
       left: 146px;
     }
+
     &--fill {
       left: 25px;
     }
+
     &--contrast {
       left: 96px;
     }
   }
+
   .tools-list__item {
     width: auto;
     margin: 0;
@@ -129,16 +136,18 @@
     &:first-of-type {
       padding-top: 20px;
     }
+
     &:last-of-type {
       padding-top: 33px;
     }
   }
+
   .tools-list__button {
     color: $lipstick;
     width: 24px;
 
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       color: $lipstick;
     }
   }
@@ -148,10 +157,12 @@
       width: 22px;
       height: 22px;
     }
+
     &--fill {
       width: 24px;
       height: 22px;
     }
+
     &--contrast {
       width: 16px;
       height: 16px;
@@ -164,33 +175,41 @@
     padding-right: 30px;
     width: auto;
   }
+
   .tools-list__button {
     width: 48px;
     display: block;
   }
+
   .tools-list__range {
     margin-left: 44px;
   }
+
   .tools-list__toggle {
     &--crop {
       left: 70px;
     }
+
     &--fill {
       left: 247px;
     }
+
     &--contrast {
       left: 160px;
     }
   }
+
   .tools-list__icon {
     &--crop {
       width: 44px;
       height: 44px;
     }
+
     &--fill {
       width: 48px;
       height: 43px;
     }
+
     &--contrast {
       width: 32px;
       height: 32px;

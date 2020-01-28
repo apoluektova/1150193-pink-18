@@ -12,8 +12,7 @@
 
 .contacts__intro {
   @include page-slogan;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   padding: 0 28px;
   line-height: 25px;
 }
@@ -49,7 +48,7 @@
   }
 
   &--mail:active {
-    color: rgba($dark-grey, 0.3)
+    color: rgba($dark-grey, 0.3);
   }
 }
 
@@ -57,16 +56,19 @@
   .contacts {
     padding-top: 42px;
   }
+
   .contacts__intro {
     font-size: 40px;
     line-height: 50px;
     margin-bottom: 43px;
   }
+
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
   .contacts__item {
     width: 250px;
     margin-bottom: 38px;
@@ -79,12 +81,15 @@
       margin-bottom: 0;
     }
   }
+
   .contacts__info {
     line-height: 34px;
   }
+
   .contacts__text {
     line-height: 24px;
   }
+
   .contacts__link {
     line-height: 42px;
   }
@@ -94,24 +99,30 @@
   .contacts {
     padding-top: 58px;
   }
+
   .contacts__intro {
     font-size: 50px;
     line-height: 65px;
     padding: 0 110px;
     margin-bottom: 50px;
   }
+
   .contacts__list {
     margin: 0 -9px;
   }
+
   .contacts__item:first-of-type {
     margin-right: 0;
   }
+
   .contacts__item--mail {
     order: 3;
   }
+
   .contacts__info {
     line-height: 36px;
   }
+
   .contacts__text {
     margin-bottom: 20px;
     line-height: 22px;

@@ -11,11 +11,12 @@
       background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
       background-size: 700px auto, 1200px auto;
     }
-
   }
+
   .promo__wrapper {
     @include wrapper;
   }
+
   .promo__index-wrapper {
     width: 300px;
   }

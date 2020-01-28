@@ -6,25 +6,26 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
 .modal-error__header {
   font-size: 18px;
   line-height: 24px;
   color: $black;
   font-weight: 700;
   text-align: center;
-  margin: 0;
-  margin-bottom: 24px;
+  margin: 0 0 24px;
   padding: 0 10px;
 }
+
 .modal-error__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
   color: $dark-grey;
-  margin: 0;
-  margin-bottom: 39px;
+  margin: 0 0 39px;
 }
+
 .modal-error__button {
   width: 100%;
   padding: 13px 15px 15px;
@@ -37,18 +38,22 @@
     top: 1164px;
     padding: 0;
   }
+
   .modal-error__info {
     padding: 35px 70px 38px;
   }
+
   .modal-error__header {
     font-size: 30px;
     line-height: 40px;
     padding: 0 30px;
   }
+
   .modal-error__text {
     font-size: 18px;
     margin-bottom: 0;
   }
+
   .modal-error__submit {
     padding: 0 80px 54px;
   }
@@ -60,13 +65,16 @@
     padding: 0;
     top: 817px;
   }
+
   .modal-error__info {
     background-color: $white;
     padding: 41px 200px 62px;
   }
+
   .modal-error__header {
     padding: 0;
   }
+
   .modal-error__submit {
     background-color: $light-grey;
     padding: 45px 242px 55px;

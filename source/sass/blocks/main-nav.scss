@@ -13,32 +13,23 @@
   @include no-button;
   color: $white;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
   z-index: 2;
   display: block;
   width: 50px;
   height: 24px;
   cursor: pointer;
 
-  &--close {
-    margin-top: 20px;
-  }
   &--burger {
     display: none;
   }
 }
 
 .main-nav--closed .main-nav__toggle--burger {
-  position: absolute;
-  top: 0;
-  right: 0;
   width: 50px;
   height: 24px;
   display: block;
-
-  margin-top: 20px;
-  margin-right: 20px;
 }
 
 .main-nav--closed .main-nav__toggle--close {
@@ -54,11 +45,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__toggle--close {
-    margin-top: 40px;
-  }
-  .main-nav--closed .main-nav__toggle--burger {
-    margin-top: 40px;
+  .main-nav__toggle {
+    top: 40px;
   }
 }
 
@@ -69,6 +57,7 @@
     padding-top: 8px;
     margin-left: 30px;
   }
+
   .main-nav__toggle {
     display: none;
   }

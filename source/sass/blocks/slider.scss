@@ -20,7 +20,6 @@
   }
 }
 
-
 .slider__toggle--active {
   width: 12px;
   height: 12px;
@@ -29,39 +28,41 @@
   opacity: 1;
 }
 
- @media (min-width: $desktop-width) {
-   .slider__toggle--active {
-     display: none;
-   }
-   .slider__toggle--left,
-   .slider__toggle--right {
-     display: block;
-   }
+@media (min-width: $desktop-width) {
+  .slider__toggle--active {
+    display: none;
+  }
 
-   .slider__toggle--left {
-     position: absolute;
-     top: 209px;
-     left: 10px;
-     width: 22px;
-     height: 41px;
-     padding: 0;
-     border-radius: 0;
-     background-repeat: no-repeat;
-     background-color: transparent;
-     border: none;
-     opacity: 0.3;
-     cursor: pointer;
-     background-image: url("../img/svg/icon-review-arrow-left.svg");
+  .slider__toggle--left,
+  .slider__toggle--right {
+    display: block;
+  }
 
-     &:hover,
-     &:focus {
+  .slider__toggle--left {
+    position: absolute;
+    top: 209px;
+    left: 10px;
+    width: 22px;
+    height: 41px;
+    padding: 0;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    opacity: 0.3;
+    cursor: pointer;
+    background-image: url("../img/svg/icon-review-arrow-left.svg");
+
+    &:focus,
+    &:hover {
       opacity: 0.6;
-      }
+    }
 
     &:active {
       opacity: 0.1;
     }
   }
+
   .slider__toggle--right {
     position: absolute;
     top: 209px;
@@ -77,13 +78,13 @@
     cursor: pointer;
     background-image: url("../img/svg/icon-review-arrow-right.svg");
 
-    &:hover,
-    &:focus {
-     opacity: 0.6;
-     }
+    &:focus,
+    &:hover {
+      opacity: 0.6;
+    }
 
-   &:active {
-     opacity: 0.1;
-   }
- }
- }
+    &:active {
+      opacity: 0.1;
+    }
+  }
+}

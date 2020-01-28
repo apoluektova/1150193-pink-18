@@ -1,8 +1,10 @@
 .social {
   width: 100%;
 }
+
 .social__list {
   @include no-list;
+  margin: 10px 0 0;
   display: flex;
   justify-content: center;
 }
@@ -10,12 +12,8 @@
 .social__item {
   position: relative;
   background-color: $white;
-  border: 3px solid rgba($dark-grey, 0.1);
-  border-radius: 50%;
   cursor: pointer;
-  width: 46px;
-  height: 46px;
-  margin-right: 17px;
+  margin-right: 12px;
 
   &:hover,
   &:focus {
@@ -33,37 +31,15 @@
 }
 
 .social__link {
-  width: 46px;
-  height: 46px;
+  width: 51px;
+  height: 51px;
+  border: 3px solid rgba($dark-grey, 0.1);
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social__logo {
-  position: absolute;
-
-  &--twitter {
-    top: 14px;
-    left: 11px;
-    width: 18px;
-    height: 14px;
-  }
-
-  &--facebook {
-    left: 16px;
-    bottom: 11px;
-    width: 9px;
-    height: 18px;
-  }
-
-  &--youtube {
-    bottom: 14px;
-    left: 14px;
-    width: 15px;
-    height: 13px;
-  }
-}
 @media (min-width: $tablet-width) {
   .social {
     width: 33.333333%;

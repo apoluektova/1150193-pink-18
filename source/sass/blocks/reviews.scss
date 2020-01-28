@@ -31,8 +31,7 @@
 
 .reviews__text {
   @include page-text;
-  margin: 0;
-  margin-bottom: 33px;
+  margin: 0 0 33px;
 }
 
 @media (min-width: $tablet-width) {
@@ -40,25 +39,29 @@
     padding-top: 73px;
     padding-bottom: 0;
   }
+
   .reviews__wrapper {
     @include wrapper;
   }
+
   .reviews__quote {
     display: flex;
     flex-direction: column;
   }
+
   .reviews__author {
     font-size: 20px;
     order: 2;
     margin: 0;
   }
+
   .reviews__author-details {
-    display: block;
     @include page-text;
-    margin: 0;
-    margin-bottom: 37px;
+    display: block;
+    margin: 0 0 37px;
     order: 3;
   }
+
   .reviews__text {
     font-size: 18px;
     text-align: center;
@@ -72,9 +75,11 @@
     padding-bottom: 0;
     position: relative;
   }
+
   .reviews__wrapper {
     @include wrapper;
   }
+
   .reviews__text {
     margin-bottom: 37px;
     font-size: 18px;
@@ -91,12 +96,15 @@
       background-image: url("../img/svg/icon-quotes.svg");
     }
   }
+
   .reviews__author {
     font-size: 24px;
   }
+
   .reviews__author-details {
     font-size: 18px;
   }
+
   .reviews__toggles {
     display: none;
   }

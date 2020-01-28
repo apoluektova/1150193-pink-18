@@ -7,16 +7,17 @@
     margin-bottom: -67px;
     position: relative;
   }
+
   &--opened-js {
     margin-bottom: -67px;
-    position: absolute;
+    position: relative;
   }
 }
 
 .page-header__container {
   @include wrapper;
   display: flex;
-  padding-top: 19px;
+  padding-top: 22px;
   padding-bottom: 25px;
   justify-content: space-between;
   background-color: $dark-grey;
@@ -27,8 +28,8 @@
 }
 
 .page-header__link {
-  cursor: pointer;
   @include header-events;
+  cursor: pointer;
   color: $white;
 }
 
@@ -36,8 +37,9 @@
   &--mobile {
     display: block;
   }
-  &--tablet,
-  &--desktop {
+
+  &--desktop,
+  &--tablet {
     display: none;
   }
 }
@@ -47,9 +49,10 @@
     padding-top: 27px;
     padding-bottom: 42px;
   }
+
   .page-header__logo {
-    &--mobile,
-    &--desktop {
+    &--desktop,
+    &--mobile {
       display: none;
     }
 

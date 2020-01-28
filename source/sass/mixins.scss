@@ -44,16 +44,19 @@
     text-align: left;
     color: $dark-grey;
   }
+
   &::-moz-placeholder {
     font-weight: 18px;
     text-align: left;
     color: $dark-grey;
   }
-  &:-moz-placeholder  {
+
+  &:-moz-placeholder {
     font-weight: 18px;
     text-align: left;
     color: $dark-grey;
   }
+
   &:-ms-input-placeholder {
     font-weight: 18px;
     text-align: left;

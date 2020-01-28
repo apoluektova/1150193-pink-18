@@ -39,29 +39,33 @@
       border-radius: 50%;
     }
   }
+
   .effect__wrapper {
     @include wrapper;
   }
+
   .effect__text {
     padding: 36px 10px 0 309px;
   }
+
   .effect__title {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     color: $black;
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
     padding-right: 120px;
   }
+
   .effect__description {
     font-size: 14px;
-    margin: 0;
-    margin-bottom: 8px;
+    margin: 0 0 8px;
   }
+
   .effect__description br {
     display: none;
   }
+
   .effect__link {
     font-size: 14px;
     color: $lipstick;
@@ -99,24 +103,30 @@
       padding-right: 2px;
     }
   }
+
   .effect__wrapper {
     @include wrapper;
   }
+
   .effect__text {
     padding: 87px 48px 51px 366px;
   }
+
   .effect__title {
     @include desktop-title;
     padding-right: 0;
     margin-bottom: 23px;
   }
+
   .effect__description {
     @include desktop-desc;
     margin-bottom: 32px;
   }
+
   .effect__description br {
     display: block;
   }
+
   .effect__link {
     @include desktop-desc;
   }
