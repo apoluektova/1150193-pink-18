@@ -74,29 +74,29 @@
     display: none;
   }
 
-  &--void {
-    display: none;
-  }
-
   &:last-child {
     padding-top: 15px;
   }
+}
 
-  &--yes {
-    position: absolute;
-    top: 19px;
-    right: 16px;
-    width: 31px;
-    height: 21px;
-  }
+.table__yes {
+  position: absolute;
+  top: 19px;
+  right: 16px;
+  width: 31px;
+  height: 21px;
+}
 
-  &--no {
-    position: absolute;
-    top: 15px;
-    right: 19px;
-    width: 27px;
-    height: 26px;
-  }
+.table__no {
+  position: absolute;
+  top: 15px;
+  right: 19px;
+  width: 27px;
+  height: 26px;
+}
+
+.table__void {
+  display: none;
 }
 
 .table__cell-text {
@@ -126,16 +126,6 @@
       background-color: $light-grey;
     }
 
-    &--yes {
-      top: 12px;
-      right: 60px;
-    }
-
-    &--no {
-      top: 9px;
-      right: 63px;
-    }
-
     &--standard::before {
       top: -5px;
       left: 0;
@@ -155,6 +145,16 @@
       color: $white;
       transform: rotate(-45deg);
     }
+  }
+
+  .table__yes {
+    top: 12px;
+    right: 60px;
+  }
+
+  .table__no {
+    top: 9px;
+    right: 63px;
   }
 
   .table__header-cell {
@@ -190,16 +190,16 @@
   .table__cell {
     font-size: 18px;
     padding: 12px 15px 16px 19px;
+  }
 
-    &--yes {
-      top: 20px;
-      right: 102px;
-    }
+  .table__yes {
+    top: 20px;
+    right: 102px;
+  }
 
-    &--no {
-      top: 17px;
-      right: 103px;
-    }
+  .table__no {
+    top: 17px;
+    right: 103px;
   }
 
   .table__header-cell {

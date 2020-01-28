@@ -17,22 +17,28 @@
   right: 20px;
   z-index: 2;
   display: block;
-  width: 50px;
-  height: 24px;
   cursor: pointer;
-
-  &--burger {
-    display: none;
-  }
 }
 
-.main-nav--closed .main-nav__toggle--burger {
+.main-nav__close {
+    width: 24px;
+    height: 23px;
+}
+
+.main-nav__burger {
+    display: none;
+}
+
+
+.main-nav--closed .main-nav__burger {
   width: 50px;
   height: 24px;
   display: block;
+  top: 20px;
+  right: 20px;
 }
 
-.main-nav--closed .main-nav__toggle--close {
+.main-nav--closed .main-nav__close {
   display: none;
 }
 

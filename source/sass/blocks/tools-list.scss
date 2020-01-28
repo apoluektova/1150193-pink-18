@@ -1,11 +1,11 @@
 .tools-list {
   @include no-list;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   margin-bottom: 32px;
   position: relative;
-  padding: 0 44px 40px 38px;
+  padding: 0 20px 40px 20px;
 }
 
 .tools-list__item {

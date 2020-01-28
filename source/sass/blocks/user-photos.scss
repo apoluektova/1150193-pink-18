@@ -57,7 +57,7 @@
   padding: 15px 30px 22px 17px;
 
   &--panorama {
-    padding: 16px 37px 22px 17px;
+    padding: 16px 10px 22px 17px;
   }
 }
 
@@ -99,10 +99,6 @@
   text-align: left;
   margin-bottom: 6px;
   width: 100%;
-
-  &--questions {
-    display: none;
-  }
 }
 
 .user-photos__like {
@@ -241,10 +237,6 @@
   }
 
   .user-photos__description {
-    &--questions {
-      display: inline;
-    }
-
     &--panorama {
       order: 1;
     }

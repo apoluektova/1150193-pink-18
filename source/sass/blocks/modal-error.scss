@@ -27,9 +27,31 @@
 }
 
 .modal-error__button {
+  @include no-button;
   width: 100%;
   padding: 13px 15px 15px;
   margin-bottom: 0;
+  background-color: $green;
+  border: 2px solid $green;
+  font-size: inherit;
+  font-weight: 700;
+  color: $white;
+  line-height: 30px;
+  text-transform: uppercase;
+  outline: none;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $medium-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {
