@@ -1,6 +1,6 @@
 .plans {
   background-color: $light-grey;
-  padding: 120px 20px 46px 20px;
+  padding: 120px 20px 46px;
   position: relative;
 
   &::before {
@@ -22,6 +22,7 @@
   margin: 0 -20px;
   overflow: hidden;
 }
+
 .plans__table {
   margin-left: -100%;
 }
@@ -67,14 +68,17 @@
   .plans {
     padding: 107px 0 70px;
   }
+
   .plans__wrapper {
     @include wrapper;
     margin: 0;
     overflow: auto;
   }
+
   .plans__toggles {
     display: none;
   }
+
   .plans__table {
     margin: 0;
   }
@@ -89,6 +93,7 @@
       height: 95px;
     }
   }
+
   .plans__wrapper {
     @include wrapper;
   }

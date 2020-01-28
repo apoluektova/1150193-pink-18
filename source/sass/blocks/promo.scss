@@ -1,7 +1,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     background-color: $dark-grey;
-    padding-top: 90px;
+    padding-top: 190px;
     padding-bottom: 110px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-position: bottom center, center -111px;
@@ -11,11 +11,12 @@
       background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
       background-size: 700px auto, 1200px auto;
     }
-
   }
+
   .promo__wrapper {
     @include wrapper;
   }
+
   .promo__index-wrapper {
     width: 300px;
   }
@@ -26,7 +27,7 @@
     padding-top: 217px;
     padding-bottom: 121px;
     background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-position: 146px bottom, top center;
+    background-position: 27px bottom, center top;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dppx) {

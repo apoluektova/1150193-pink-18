@@ -44,16 +44,19 @@
     text-align: left;
     color: $dark-grey;
   }
+
   &::-moz-placeholder {
     font-weight: 18px;
     text-align: left;
     color: $dark-grey;
   }
-  &:-moz-placeholder  {
+
+  &:-moz-placeholder {
     font-weight: 18px;
     text-align: left;
     color: $dark-grey;
   }
+
   &:-ms-input-placeholder {
     font-weight: 18px;
     text-align: left;
@@ -82,5 +85,27 @@
     max-width: 960px;
     margin: 0 auto;
     padding: 0 10px;
+  }
+}
+
+@mixin header-events {
+  &:hover {
+    color: $lipstick;
+  }
+
+  &:active {
+    color: $white;
+    opacity: 0.3;
+  }
+}
+
+@mixin footer-events {
+  &:hover {
+    color: $lipstick;
+  }
+
+  &:active {
+    color: $dark-grey;
+    opacity: 0.3;
   }
 }

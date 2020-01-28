@@ -1,17 +1,17 @@
 .download-app {
   background-color: $download-background;
-  padding: 28px 20px 30px 20px;
+  padding: 28px 20px 30px;
 }
 
 .download-app__button {
   @include button-border($white);
   @include oval-button;
-  padding: 15px 32px 16px 32px;
+  padding: 15px 32px 16px;
   display: block;
   color: $white;
   margin-bottom: 32px;
 
-
+  &:focus,
   &:hover {
     background-color: $white;
     color: $lipstick;
@@ -35,9 +35,11 @@
     background-color: transparent;
     padding: 0;
   }
+
   .download-app__button {
     margin-bottom: 46.5px;
   }
+
   .download-app__description {
     display: block;
     font-size: inherit;
@@ -48,9 +50,10 @@
   .download-app__button {
     font-size: 21px;
     font-weight: 700;
-    padding: 14px 20px 16px 20px;
+    padding: 14px 20px 16px;
     margin-bottom: 67px;
   }
+
   .download-app__market-list {
     margin-bottom: 63px;
   }

@@ -21,6 +21,35 @@
 
 .user-photos__item {
   margin-bottom: 19px;
+  position: relative;
+
+  &--panorama {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 140px;
+      height: 36px;
+      background-color: $lipstick;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "Панорама дня";
+      position: absolute;
+      top: 6px;
+      right: 20px;
+      width: 102px;
+      height: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: $white;
+      z-index: 2;
+    }
+  }
 }
 
 .user-photos__post-wrapper {
@@ -28,7 +57,7 @@
   padding: 15px 30px 22px 17px;
 
   &--panorama {
-    padding: 16px 37px 22px 17px;
+    padding: 16px 10px 22px 17px;
   }
 }
 
@@ -49,7 +78,7 @@
 .user-photos__author {
   line-height: 24px;
   text-align: left;
-  color: $dark-grey
+  color: $dark-grey;
 }
 
 .user-photos__author-name {
@@ -69,10 +98,7 @@
   font-size: 14px;
   text-align: left;
   margin-bottom: 6px;
-
-  &--questions {
-    display: none;
-  }
+  width: 100%;
 }
 
 .user-photos__like {
@@ -80,10 +106,22 @@
   display: block;
   padding-left: 32px;
   margin-top: auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 12px;
+    top: 8px;
+    left: 0;
+    background-image: url("../img/svg/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
 }
 
-.user-photos__like-text,
-.user-photos__like-number {
+.user-photos__like-number,
+.user-photos__like-text {
   font-size: 12px;
   text-align: left;
   text-transform: uppercase;
@@ -94,12 +132,15 @@
   .user-photos__slogan {
     padding: 92px 90px 76px;
   }
+
   .user-photos {
     overflow: hidden;
   }
+
   .user-photos__text {
     font-size: 18px;
   }
+
   .user-photos__item {
     margin-right: 20px;
     display: flex;
@@ -109,6 +150,14 @@
       display: block;
       width: 100%;
       margin-bottom: 50px;
+
+      &::before {
+        top: 57px;
+      }
+
+      &::after {
+        top: 63px;
+      }
     }
 
     &:nth-of-type(2n+1) {
@@ -163,20 +212,33 @@
     padding-right: 140px;
     padding-top: 2px;
 
+    &::before {
+      top: 8px;
+      left: 227px;
+    }
+
     &--panorama {
-    /*order: 1;*/
-    padding-right: 30px;
-    padding-left: 0;
-    padding-top: 0;
-    width: 121px;
+      padding-right: 30px;
+      padding-left: 0;
+      padding-top: 0;
+      width: 121px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 13px;
+        height: 12px;
+        top: 8px;
+        left: 105px;
+        background-image: url("../img/svg/icon-heart.svg");
+        background-repeat: no-repeat;
+      }
     }
   }
+
   .user-photos__description {
-    &--questions {
-    display: inline;
-    }
     &--panorama {
-    order: 1;
+      order: 1;
     }
   }
 
@@ -192,30 +254,45 @@
   .user-photos__slogan {
     padding: 91px 180px 89px;
   }
+
   .user-photos__post-wrapper {
     padding: 22px 32px 23px 28px;
 
     &--panorama {
       width: 940px;
       padding: 22px 32px 17px 27px;
-      margin-bottom: 50px;
     }
   }
+
   .user-photos__item {
     margin-bottom: 54px;
     min-height: 555px;
 
     &--panorama {
       margin: 0;
+      margin-bottom: 50px;
+
+      &::before {
+        top: 54px;
+        right: 0;
+      }
+
+      &::after {
+        top: 59px;
+        right: 20px;
+      }
     }
+
     &:nth-of-type(2n+1) {
       margin-right: 20px;
     }
+
     &:nth-of-type(4),
     &:nth-of-type(7) {
       margin-right: 0;
     }
   }
+
   .user-photos__image {
     width: 300px;
 
@@ -224,6 +301,7 @@
       height: 506px;
     }
   }
+
   .user-photos__list {
     width: 940px;
     margin: 0 auto;

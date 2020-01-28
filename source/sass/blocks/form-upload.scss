@@ -23,10 +23,8 @@
 
 .form-upload__text {
   @include page-text;
-  margin: 0;
-  margin-left: -3px;
+  margin: 0 0 0 -3px;
 }
-
 
 .form-upload__button-submit {
   @include button-border($lipstick);
@@ -53,7 +51,7 @@
   @include oval-button;
   background-color: transparent;
   color: rgba($dark-grey, 0.1);
-  padding: 15px 91px 16px 91px;
+  padding: 15px 91px 16px;
 
   &:hover {
     @include button-border(rgba($dark-grey, 0.3));
@@ -71,40 +69,48 @@
   .form-upload__text-wrapper {
     @include wrapper;
   }
+
   .form-upload__text {
     font-size: 18px;
     padding: 43px 100px 72px;
   }
+
   .form-upload__picture-wrapper {
     flex-shrink: 0;
   }
+
   .form-upload__image-wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 55px;
     padding-bottom: 49px;
   }
+
   .form-upload__image {
     margin: 0;
     width: 300px;
   }
+
   .form-upload__edit-wrapper {
     flex-grow: 1;
     margin-left: 48px;
   }
+
   .form-upload__edit {
     border-bottom: none;
   }
+
   .form-upload__buttons {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
   }
+
   .form-upload__button-submit {
     padding: 13px 79px 16px 77px;
     margin-bottom: 24px;
   }
+
   .form-upload__button-cancel {
     padding: 15px 93px 18px 85px;
   }
@@ -114,21 +120,26 @@
   .form-upload {
     @include wrapper;
   }
+
   .form-upload__text {
     padding: 5px 230px 69px;
   }
+
   .form-upload__image-wrapper {
     padding: 54px 60px 52px 80px;
   }
+
   .form-upload__edit-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 90px;
   }
+
   .form-upload__edit {
     margin-bottom: 0;
   }
+
   .form-upload__buttons {
     display: flex;
     flex-direction: row;
@@ -137,11 +148,13 @@
     margin-top: auto;
     margin-bottom: 4px;
   }
+
   .form-upload__button-submit {
     margin-bottom: 0;
     padding: 14px 36px 18px 43px;
     margin-left: 0;
   }
+
   .form-upload__button-cancel {
     margin: 0;
     padding: 14px 54px 18px 49px;
