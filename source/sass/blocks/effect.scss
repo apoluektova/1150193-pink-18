@@ -8,6 +8,10 @@
     padding-top: 59px;
     padding-bottom: 52px;
     text-align: left;
+  }
+
+  .effect__wrapper {
+    @include wrapper;
     position: relative;
 
     &::before {
@@ -15,7 +19,7 @@
       position: absolute;
       width: 238px;
       height: 276px;
-      top: 57px;
+      top: 0px;
       left: 20px;
       background-image: url("../img/svg/icon-timer.svg");
       background-repeat: no-repeat;
@@ -28,7 +32,7 @@
       width: 202px;
       height: 202px;
       left: 39px;
-      top: 113px;
+      top: 56px;
       font-size: 96px;
       font-weight: 700;
       line-height: 155px;
@@ -38,10 +42,6 @@
       border: 15px solid $lipstick;
       border-radius: 50%;
     }
-  }
-
-  .effect__wrapper {
-    @include wrapper;
   }
 
   .effect__text {
@@ -78,11 +78,15 @@
     padding-top: 17px;
     padding-bottom: 67px;
     background-color: $light-grey;
+  }
+
+  .effect__wrapper {
+    @include wrapper;
 
     &::before {
       width: 298px;
       height: 345px;
-      top: 10px;
+      top: -7px;
       left: 10px;
       background-size: 298px 345px;
     }
@@ -90,7 +94,7 @@
     &::after {
       width: 253px;
       height: 253px;
-      top: 79px;
+      top: 62px;
       left: 32px;
       font-size: 120px;
       line-height: 187px;
@@ -102,10 +106,6 @@
       padding-top: 10px;
       padding-right: 2px;
     }
-  }
-
-  .effect__wrapper {
-    @include wrapper;
   }
 
   .effect__text {

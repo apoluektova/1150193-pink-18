@@ -120,12 +120,6 @@
       display: table-cell;
     }
 
-    &--void {
-      display: table-cell;
-      border: 2px solid $light-grey;
-      background-color: $light-grey;
-    }
-
     &--standard::before {
       top: -5px;
       left: 0;
@@ -155,6 +149,12 @@
   .table__no {
     top: 9px;
     right: 63px;
+  }
+
+  .table__void {
+    display: table-cell;
+    border: 2px solid $light-grey;
+    background-color: $light-grey;
   }
 
   .table__header-cell {

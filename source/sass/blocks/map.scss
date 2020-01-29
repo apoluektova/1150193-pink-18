@@ -22,7 +22,7 @@
     z-index: 1;
     background-image: url("../img/svg/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
   }
 }
@@ -59,7 +59,7 @@
     }
 
     &::before {
-      height: 123px;
+      height: 108px;
     }
   }
 }

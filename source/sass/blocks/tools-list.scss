@@ -32,11 +32,14 @@
   &--crop {
     width: 44px;
     height: 44px;
+    margin-left: 11px;
+    margin-top: -10px;
   }
 
   &--fill {
     width: 48px;
     height: 43px;
+    margin-top: -3px;
 
     &:focus,
     &:hover {
@@ -47,6 +50,8 @@
   &--contrast {
     width: 32px;
     height: 32px;
+    margin-right: 22px;
+    margin-top: -5px;
 
     &:focus,
     &:hover {
@@ -149,6 +154,19 @@
     &:focus,
     &:hover {
       color: $lipstick;
+    }
+
+    &--crop {
+      margin: 0;
+    }
+
+    &--fill {
+      margin: 0;
+    }
+
+    &--contrast{
+      margin: 0;
+      margin-left: 5px;
     }
   }
 

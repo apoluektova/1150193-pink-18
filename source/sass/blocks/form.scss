@@ -257,7 +257,7 @@
   line-height: 30px;
   text-transform: uppercase;
   outline: none;
-  padding: 13px 15px 16px;
+  padding: 20px 15px 16px;
   margin-bottom: 35px;
   width: 100%;
 
@@ -279,10 +279,10 @@
   @include page-text;
   text-transform: uppercase;
   margin: 0;
+}
 
-  &--hidden {
-    display: none;
-  }
+.form__asterisk-hidden {
+  display: none;
 }
 
 .form__asterisk-sign {
@@ -292,7 +292,7 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    padding: 92px 0 54px;
+    padding: 92px 0 47px;
   }
 
   .form__wrapper {
@@ -356,23 +356,14 @@
       content: "";
       position: absolute;
       width: 59px;
-      height: 59px;
+      height: 56px;
       cursor: pointer;
       background-color: $medium-grey;
-      top: 2px;
-      right: 2px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 19px;
-      top: 20px;
-      right: 20px;
       background-image: url("../img/svg/icon-phone.svg");
       background-repeat: no-repeat;
       background-position: center;
+      top: 2px;
+      right: 2px;
     }
   }
 
@@ -385,22 +376,14 @@
       content: "";
       position: absolute;
       width: 59px;
-      height: 59px;
+      height: 56px;
       cursor: pointer;
       background-color: $medium-grey;
       top: 2px;
       right: 2px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 13px;
-      top: 21px;
-      right: 21px;
       background-image: url("../img/svg/icon-mail.svg");
       background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
@@ -530,7 +513,7 @@
 
   .form__submit {
     margin-bottom: 0;
-    padding: 15px 56px 12px 55px;
+    padding: 20px 56px 17px 55px;
     width: auto;
     display: block;
   }
@@ -697,7 +680,7 @@
     width: 100%;
   }
 
-  .form__asterisk--hidden {
+  .form__asterisk-hidden {
     display: inline;
   }
 

@@ -31,9 +31,10 @@
   @include oval-button;
   background-color: transparent;
   color: $lipstick;
-  padding: 15px 89px 16px 87px;
+  padding: 15px 15px 16px 15px;
   margin-bottom: 12px;
   margin-left: -2px;
+  width: 100%;
 
   &:hover {
     background-color: $lipstick;
@@ -51,7 +52,8 @@
   @include oval-button;
   background-color: transparent;
   color: rgba($dark-grey, 0.1);
-  padding: 15px 91px 16px;
+  padding: 15px 15px 16px;
+  width: 100%;
 
   &:hover {
     @include button-border(rgba($dark-grey, 0.3));
@@ -104,6 +106,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-right: 10px;
   }
 
   .form-upload__button-submit {
@@ -147,16 +150,18 @@
     align-items: flex-end;
     margin-top: auto;
     margin-bottom: 4px;
+    padding: 0;
   }
 
   .form-upload__button-submit {
     margin-bottom: 0;
-    padding: 14px 36px 18px 43px;
+    padding: 14px 15px 18px;
     margin-left: 0;
+    margin-right: 44px;
   }
 
   .form-upload__button-cancel {
     margin: 0;
-    padding: 14px 54px 18px 49px;
+    padding: 14px 15px 18px;
   }
 }

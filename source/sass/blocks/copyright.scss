@@ -12,6 +12,8 @@
   text-align: center;
   color: $dark-grey;
   margin: 0;
+  margin-left: 3px;
+  margin-top: -6px;
 }
 
 .copyright__logo {
@@ -38,6 +40,10 @@
     width: 33.333333%;
     justify-content: flex-end;
     padding-top: 10px;
+  }
+
+  .copyright__text {
+    margin-top: 3px;
   }
 
   .copyright__link {
