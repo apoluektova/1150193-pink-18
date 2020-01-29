@@ -15,16 +15,6 @@
   cursor: pointer;
   margin-right: 12px;
 
-  &:hover,
-  &:focus {
-    border-color: $dark-grey;
-  }
-
-  &:active {
-    border-color: rgba($dark-grey, 0.3);
-    opacity: 0.3;
-  }
-
   &:last-of-type {
     margin-right: 0;
   }
@@ -38,6 +28,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    border-color: $dark-grey;
+  }
+
+  &:active {
+    border-color: rgba($dark-grey, 0.3);
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
