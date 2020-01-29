@@ -197,6 +197,10 @@
   .tools-list__button {
     width: 48px;
     display: block;
+
+    &--contrast {
+      margin-left: 0;
+    }
   }
 
   .tools-list__range {

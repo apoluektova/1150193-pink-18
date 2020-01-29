@@ -33,6 +33,7 @@
   font-weight: 300;
   line-height: 30px;
   color: $white;
+  max-width: 280px;
 }
 
 @media (min-width: $tablet-width) {
@@ -53,7 +54,7 @@
 
     &--index {
       height: auto;
-      padding: 0 56px 26px 55px;
+      padding: 27px 56px 26px 55px;
       background-image: none;
     }
   }
@@ -61,6 +62,7 @@
   .page-description__text {
     font-size: 40px;
     line-height: 50px;
+    max-width: 620px;
 
     &--inner {
       font-size: 50px;
@@ -90,5 +92,6 @@
     font-size: 50px;
     line-height: 60px;
     max-width: 960px;
+    padding-top: 17px;
   }
 }
