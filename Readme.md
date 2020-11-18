@@ -3,6 +3,7 @@
 * Студент: [Анна Полуэктова](https://up.htmlacademy.ru/adaptive/18/user/1150193).
 * Наставник: [Максим Фарига](https://htmlacademy.ru/profile/maximfariga).
 
+
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
